@@ -7,7 +7,7 @@ Pure markdown files can (currently) not split a slide in column without html.
 
 To convert the slidedeck into a *.html file: 
 
-    marp --theme-set ngi-theme.css --html -w model-validation-sexy-again.md
+    marp --theme-set ngi-theme.css --html -w talk.md
 
 
 ### Some nice issues to pay attention to 
