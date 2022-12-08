@@ -21,59 +21,40 @@
 
 /* ...and layout freely :) */div#p>svg>foreignObject>section table{width:100%}div#p>svg>foreignObject>section td{text-align:center;vertical-align:middle}div#p>svg>foreignObject>section td,div#p>svg>foreignObject>section th{display:table-cell}div#p>svg>foreignObject>section ul{list-style-type:none;margin-left:0.2px}div#p>svg>foreignObject>section li:before{content:"";background-image:url(./figures/logo/NGI/NGI_pil_RGB_dark_grey_medium.png);width:15px;height:15px;display:inline-block;background-size:contain;margin-right:calc(var(--marpit-root-font-size, 1rem) * 0.25)}div#p>svg>foreignObject>section h2{color:gray}div#p>svg>foreignObject>section img{background-color:transparent!important;box-sizing:initial;max-width:100%}div#p>svg>foreignObject>section figure{border:thin #c0c0c0 solid;display:flex;flex-flow:column;padding:5px;max-width:220px;margin:auto}div#p>svg>foreignObject>section.title{--title-height:130px;--subtitle-height:70px;--subsubtitle-height:50px;overflow:visible;display:grid;grid-template-columns:1fr;grid-template-rows:1fr var(--title-height) var(--subtitle-height) var(--subsubtitle-height) 1fr;grid-template-areas:"." "title" "subtitle" "subsubtitle" "."}div#p>svg>foreignObject>section.title h1,div#p>svg>foreignObject>section.title h2,div#p>svg>foreignObject>section.title h3{margin:0;padding:0;text-align:center;height:var(--area-height);line-height:var(--area-height);font-size:calc(var(--area-height) * 0.7);border:0px dashed gray /* debug */}div#p>svg>foreignObject>section.title h1{grid-area:title;--area-height:var(--title-height)}div#p>svg>foreignObject>section.title h2{grid-area:subtitle;--area-height:var(--subtitle-height)}div#p>svg>foreignObject>section.title h3{grid-area:subsubtitle;text-align:center;--area-height:var(--subsubtitle-height)}div#p>svg>foreignObject>section.split-text{overflow:visible;display:grid;grid-template-columns:500px 500px;grid-template-rows:100px auto;grid-template-areas:"slideheading slideheading" "leftpanel rightpanel"}
 /* debug */div#p>svg>foreignObject>section.split-text .ldiv,div#p>svg>foreignObject>section.split-text .rdiv,div#p>svg>foreignObject>section.split-text h3{border:none}div#p>svg>foreignObject>section.split-text h3{grid-area:slideheading;font-size:50px}div#p>svg>foreignObject>section.split-text .ldiv{grid-area:leftpanel;text-align:left}div#p>svg>foreignObject>section.split-text .rdiv{grid-area:rightpanel;text-align:left}div#p>svg>foreignObject>section.split-text-image{overflow:visible;display:grid;grid-template-columns:500px 500px;grid-template-rows:100px auto;grid-template-areas:"slideheading slideheading" "leftpanel rightpanel"}
-/* debug */div#p>svg>foreignObject>section.split-text-image .ldiv,div#p>svg>foreignObject>section.split-text-image .rdiv,div#p>svg>foreignObject>section.split-text-image h3{border:none}div#p>svg>foreignObject>section.split-text-image h3{grid-area:slideheading;font-size:50px}div#p>svg>foreignObject>section.split-text-image .ldiv{grid-area:leftpanel;text-align:left}div#p>svg>foreignObject>section.split-text-image .rdiv{grid-area:rightpanel;text-align:right}div#p>svg>foreignObject>section.body-quote{margin:1em;font:calc(var(--marpit-root-font-size, 1rem) * 1.2)/1.4 Georgia,serif}div#p>svg>foreignObject>section.body-quote{margin:0;background:#eee;padding:1em;border-radius:1em}div#p>svg>foreignObject>section figcaption{position:right;bottom:0;padding:15px;color:black;background-color:#F5F5F5;text-align:right;font-size:calc(var(--marpit-root-font-size, 1rem) * 1);width:100%}div#p>svg>foreignObject>section div.twocols{margin-top:35px;column-count:2}div#p>svg>foreignObject>section div.twocols h1:first-child,div#p>svg>foreignObject>section div.twocols h2:first-child,div#p>svg>foreignObject>section div.twocols p:first-child,div#p>svg>foreignObject>section div.twocols ul:first-child,div#p>svg>foreignObject>section div.twocols ul li:first-child,div#p>svg>foreignObject>section div.twocols ul li p:first-child{margin-top:0!important}div#p>svg>foreignObject>section div.twocols p.break{break-before:column;margin-top:0}div#p>svg>foreignObject>section[data-marpit-advanced-background=background]{columns:initial!important;display:block!important;padding:0!important}div#p>svg>foreignObject>section[data-marpit-advanced-background=background]:after,div#p>svg>foreignObject>section[data-marpit-advanced-background=background]:before,div#p>svg>foreignObject>section[data-marpit-advanced-background=content]:after,div#p>svg>foreignObject>section[data-marpit-advanced-background=content]:before{display:none!important}div#p>svg>foreignObject>section[data-marpit-advanced-background=background]>div[data-marpit-advanced-background-container]{all:initial;display:flex;flex-direction:row;height:100%;overflow:hidden;width:100%}div#p>svg>foreignObject>section[data-marpit-advanced-background=background]>div[data-marpit-advanced-background-container][data-marpit-advanced-background-direction=vertical]{flex-direction:column}div#p>svg>foreignObject>section[data-marpit-advanced-background=background][data-marpit-advanced-background-split]>div[data-marpit-advanced-background-container]{width:var(--marpit-advanced-background-split,50%)}div#p>svg>foreignObject>section[data-marpit-advanced-background=background][data-marpit-advanced-background-split=right]>div[data-marpit-advanced-background-container]{margin-left:calc(100% - var(--marpit-advanced-background-split, 50%))}div#p>svg>foreignObject>section[data-marpit-advanced-background=background]>div[data-marpit-advanced-background-container]>figure{all:initial;background-position:center;background-repeat:no-repeat;background-size:cover;flex:auto;margin:0}div#p>svg>foreignObject>section[data-marpit-advanced-background=content],div#p>svg>foreignObject>section[data-marpit-advanced-background=pseudo]{background:transparent!important}div#p>svg>foreignObject>section[data-marpit-advanced-background=pseudo],div#p>svg[data-marpit-svg]>foreignObject[data-marpit-advanced-background=pseudo]{pointer-events:none!important}div#p>svg>foreignObject>section[data-marpit-advanced-background-split]{width:100%;height:100%}</style></head><body><div class="bespoke-marp-osc"><button data-bespoke-marp-osc="prev" tabindex="-1" title="Previous slide">Previous slide</button><span data-bespoke-marp-osc="page"></span><button data-bespoke-marp-osc="next" tabindex="-1" title="Next slide">Next slide</button><button data-bespoke-marp-osc="fullscreen" tabindex="-1" title="Toggle fullscreen (f)">Toggle fullscreen</button><button data-bespoke-marp-osc="presenter" tabindex="-1" title="Open presenter view (p)">Open presenter view</button></div><div id="p"><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="1" data-header="_08.12.2022_" data-footer="![width:90 height:40](figures/logo/NGI/NGI_logo_transparent.gif)" data-class="title" data-theme="ngi-theme" class="title" style="--header:_08.12.2022_;--footer:![width:90 height:40](figures/logo/NGI/NGI_logo_transparent.gif);--class:title;--theme:ngi-theme;">
-<header><em>08.12.2022</em></header>
+/* debug */div#p>svg>foreignObject>section.split-text-image .ldiv,div#p>svg>foreignObject>section.split-text-image .rdiv,div#p>svg>foreignObject>section.split-text-image h3{border:none}div#p>svg>foreignObject>section.split-text-image h3{grid-area:slideheading;font-size:50px}div#p>svg>foreignObject>section.split-text-image .ldiv{grid-area:leftpanel;text-align:left}div#p>svg>foreignObject>section.split-text-image .rdiv{grid-area:rightpanel;text-align:right}div#p>svg>foreignObject>section.body-quote{margin:1em;font:calc(var(--marpit-root-font-size, 1rem) * 1.2)/1.4 Georgia,serif}div#p>svg>foreignObject>section.body-quote{margin:0;background:#eee;padding:1em;border-radius:1em}div#p>svg>foreignObject>section figcaption{position:right;bottom:0;padding:15px;color:black;background-color:#F5F5F5;text-align:right;font-size:calc(var(--marpit-root-font-size, 1rem) * 1);width:100%}div#p>svg>foreignObject>section div.twocols{margin-top:35px;column-count:2}div#p>svg>foreignObject>section div.twocols h1:first-child,div#p>svg>foreignObject>section div.twocols h2:first-child,div#p>svg>foreignObject>section div.twocols p:first-child,div#p>svg>foreignObject>section div.twocols ul:first-child,div#p>svg>foreignObject>section div.twocols ul li:first-child,div#p>svg>foreignObject>section div.twocols ul li p:first-child{margin-top:0!important}div#p>svg>foreignObject>section div.twocols p.break{break-before:column;margin-top:0}div#p>svg>foreignObject>section[data-marpit-advanced-background=background]{columns:initial!important;display:block!important;padding:0!important}div#p>svg>foreignObject>section[data-marpit-advanced-background=background]:after,div#p>svg>foreignObject>section[data-marpit-advanced-background=background]:before,div#p>svg>foreignObject>section[data-marpit-advanced-background=content]:after,div#p>svg>foreignObject>section[data-marpit-advanced-background=content]:before{display:none!important}div#p>svg>foreignObject>section[data-marpit-advanced-background=background]>div[data-marpit-advanced-background-container]{all:initial;display:flex;flex-direction:row;height:100%;overflow:hidden;width:100%}div#p>svg>foreignObject>section[data-marpit-advanced-background=background]>div[data-marpit-advanced-background-container][data-marpit-advanced-background-direction=vertical]{flex-direction:column}div#p>svg>foreignObject>section[data-marpit-advanced-background=background][data-marpit-advanced-background-split]>div[data-marpit-advanced-background-container]{width:var(--marpit-advanced-background-split,50%)}div#p>svg>foreignObject>section[data-marpit-advanced-background=background][data-marpit-advanced-background-split=right]>div[data-marpit-advanced-background-container]{margin-left:calc(100% - var(--marpit-advanced-background-split, 50%))}div#p>svg>foreignObject>section[data-marpit-advanced-background=background]>div[data-marpit-advanced-background-container]>figure{all:initial;background-position:center;background-repeat:no-repeat;background-size:cover;flex:auto;margin:0}div#p>svg>foreignObject>section[data-marpit-advanced-background=content],div#p>svg>foreignObject>section[data-marpit-advanced-background=pseudo]{background:transparent!important}div#p>svg>foreignObject>section[data-marpit-advanced-background=pseudo],div#p>svg[data-marpit-svg]>foreignObject[data-marpit-advanced-background=pseudo]{pointer-events:none!important}div#p>svg>foreignObject>section[data-marpit-advanced-background-split]{width:100%;height:100%}</style></head><body><div class="bespoke-marp-osc"><button data-bespoke-marp-osc="prev" tabindex="-1" title="Previous slide">Previous slide</button><span data-bespoke-marp-osc="page"></span><button data-bespoke-marp-osc="next" tabindex="-1" title="Next slide">Next slide</button><button data-bespoke-marp-osc="fullscreen" tabindex="-1" title="Toggle fullscreen (f)">Toggle fullscreen</button><button data-bespoke-marp-osc="presenter" tabindex="-1" title="Open presenter view (p)">Open presenter view</button></div><div id="p"><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="1" data-header="_09.12.2022_" data-footer="![width:90 height:40](figures/logo/NGI/NGI_logo_transparent.gif)" data-class="title" data-theme="ngi-theme" class="title" style="--header:_09.12.2022_;--footer:![width:90 height:40](figures/logo/NGI/NGI_logo_transparent.gif);--class:title;--theme:ngi-theme;">
+<header><em>09.12.2022</em></header>
 
-<h1>&quot;Free&quot; tricks for good software</h1>
+<h1>&quot;Free&quot; tricks to make good <em>enough</em> software</h1>
 <h2></h2>
 <h4></h4>
-<h4>Sunniva Indrehus</h4>
-<h4>Norwegian Geotechnical Institute</h4>
-<footer><img src="figures/logo/NGI/NGI_logo_transparent.gif" alt="width:90 height:40" style="width:90px;height:40px;" /></footer>
-</section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="2" data-header="_08.12.2022_" data-footer="![width:90 height:40](figures/logo/NGI/NGI_logo_transparent.gif)" data-class="title" data-theme="ngi-theme" class="title" style="--header:_08.12.2022_;--footer:![width:90 height:40](figures/logo/NGI/NGI_logo_transparent.gif);--class:title;--theme:ngi-theme;">
-<header><em>08.12.2022</em></header>
-
-<h1>&quot;Free&quot; tricks for good enough software</h1>
-<h2></h2>
+<h5></h5>
 <h4></h4>
-<h4>Sunniva Indrehus</h4>
-<h4>Norwegian Geotechnical Institute</h4>
+<p><strong>Sunniva Indrehus</strong><br />
+<strong>Scientific developer</strong></p>
 <footer><img src="figures/logo/NGI/NGI_logo_transparent.gif" alt="width:90 height:40" style="width:90px;height:40px;" /></footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="3" data-header="_08.12.2022_" data-footer="![width:90 height:40](figures/logo/NGI/NGI_logo_transparent.gif)" data-theme="ngi-theme" style="--header:_08.12.2022_;--footer:![width:90 height:40](figures/logo/NGI/NGI_logo_transparent.gif);--theme:ngi-theme;">
-<header><em>08.12.2022</em></header>
-<p>A little bit about my background</p>
-<footer><img src="figures/logo/NGI/NGI_logo_transparent.gif" alt="width:90 height:40" style="width:90px;height:40px;" /></footer>
-</section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="4" data-header="_08.12.2022_" data-footer="![width:90 height:40](figures/logo/NGI/NGI_logo_transparent.gif)" data-theme="ngi-theme" style="--header:_08.12.2022_;--footer:![width:90 height:40](figures/logo/NGI/NGI_logo_transparent.gif);--theme:ngi-theme;">
-<header><em>08.12.2022</em></header>
-<p>Give credit, tricks that are useful for me does not need to be so for others</p>
-<footer><img src="figures/logo/NGI/NGI_logo_transparent.gif" alt="width:90 height:40" style="width:90px;height:40px;" /></footer>
-</section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section data-paginate="true" data-header="_08.12.2022_" data-footer="![width:90 height:40](figures/logo/NGI/NGI_logo_transparent.gif)  *Figure credit: [Ali Bati](http://www.alibati.com/horse)* " data-theme="ngi-theme" data-marpit-pagination="5" data-marpit-pagination-total="28" style="--paginate:true;--header:_08.12.2022_;--footer:![width:90 height:40](figures/logo/NGI/NGI_logo_transparent.gif)  *Figure credit: [Ali Bati](http://www.alibati.com/horse)*;--theme:ngi-theme;--marpit-advanced-background-split:50%;" data-marpit-advanced-background="background" data-marpit-advanced-background-split="right"><div data-marpit-advanced-background-container="true" data-marpit-advanced-background-direction="horizontal"><figure style="background-image:url(&quot;figures/illustrations/horse.png&quot;);background-size:400px 350px;"></figure></div></section></foreignObject><foreignObject width="50%" height="720"><section id="5" data-paginate="true" data-header="_08.12.2022_" data-footer="![width:90 height:40](figures/logo/NGI/NGI_logo_transparent.gif)  *Figure credit: [Ali Bati](http://www.alibati.com/horse)* " data-theme="ngi-theme" data-marpit-pagination="5" data-marpit-pagination-total="28" style="--paginate:true;--header:_08.12.2022_;--footer:![width:90 height:40](figures/logo/NGI/NGI_logo_transparent.gif)  *Figure credit: [Ali Bati](http://www.alibati.com/horse)*;--theme:ngi-theme;--marpit-advanced-background-split:50%;" data-marpit-advanced-background="content" data-marpit-advanced-background-split="right">
-<header><em>08.12.2022</em></header>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="2" data-header="_09.12.2022_" data-footer="![width:90 height:40](figures/logo/NGI/NGI_logo_transparent.gif) [1] Wilson, Greg, et al. 'Good enough practices in scientific computing.' PLoS computational biology 13.6 (2017): e1005510." data-class="split-text-image" data-theme="ngi-theme" class="split-text-image" style="--header:_09.12.2022_;--footer:![width:90 height:40](figures/logo/NGI/NGI_logo_transparent.gif) [1] Wilson, Greg, et al. 'Good enough practices in scientific computing.' PLoS computational biology 13.6 (2017): e1005510.;--class:split-text-image;--theme:ngi-theme;">
+<header><em>09.12.2022</em></header>
 
-<h1>What is a good <em>enough</em> model?</h1>
-<ul>
-<li>Use something simplified to learn about the real world</li>
-</ul>
-<footer><img src="figures/logo/NGI/NGI_logo_transparent.gif" alt="width:90 height:40" style="width:90px;height:40px;" />  <em>Figure credit: <a href="http://www.alibati.com/horse">Ali Bati</a></em> </footer>
+<h1>We do good <em>enough</em><sup>[1]</sup></h1>
+<div class=ldiv>
+<h2></h2>
+<p>A model of a horse<br />
+<img src="figures/illustrations/horse.png" alt="w:400 h:350" style="width:400px;height:350px;" /><br />
+<em>Credit:</em> <a href="http://www.alibati.com/horse">Ali Bati</a></p>
+</div> 
+<div class=rdiv>
+<h2></h2>
+<p>Development speed vs. time<br />
+<img src="figures/illustrations/development_speed_quick_hacks.png" alt="w:450 h:325" style="width:450px;height:325px;" /><br />
+<em>Credit:</em> Radovan Bast</p>
+</div> 
+<footer><img src="figures/logo/NGI/NGI_logo_transparent.gif" alt="width:90 height:40" style="width:90px;height:40px;" /> [1] Wilson, Greg, et al. 'Good enough practices in scientific computing.' PLoS computational biology 13.6 (2017): e1005510.</footer>
 </section>
-</foreignObject><foreignObject width="1280" height="720" data-marpit-advanced-background="pseudo"><section style="" data-marpit-advanced-background="pseudo" data-marpit-pagination="5" data-marpit-pagination-total="28"></section></foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section data-paginate="true" data-header="_08.12.2022_" data-footer="![width:90 height:40](figures/logo/NGI/NGI_logo_transparent.gif)  *Figure credit: [Ali Bati](http://www.alibati.com/horse)* " data-theme="ngi-theme" data-marpit-pagination="6" data-marpit-pagination-total="28" style="--paginate:true;--header:_08.12.2022_;--footer:![width:90 height:40](figures/logo/NGI/NGI_logo_transparent.gif)  *Figure credit: [Ali Bati](http://www.alibati.com/horse)*;--theme:ngi-theme;--marpit-advanced-background-split:50%;" data-marpit-advanced-background="background" data-marpit-advanced-background-split="right"><div data-marpit-advanced-background-container="true" data-marpit-advanced-background-direction="horizontal"><figure style="background-image:url(&quot;figures/illustrations/horse.png&quot;);background-size:400px 350px;"></figure></div></section></foreignObject><foreignObject width="50%" height="720"><section id="6" data-paginate="true" data-header="_08.12.2022_" data-footer="![width:90 height:40](figures/logo/NGI/NGI_logo_transparent.gif)  *Figure credit: [Ali Bati](http://www.alibati.com/horse)* " data-theme="ngi-theme" data-marpit-pagination="6" data-marpit-pagination-total="28" style="--paginate:true;--header:_08.12.2022_;--footer:![width:90 height:40](figures/logo/NGI/NGI_logo_transparent.gif)  *Figure credit: [Ali Bati](http://www.alibati.com/horse)*;--theme:ngi-theme;--marpit-advanced-background-split:50%;" data-marpit-advanced-background="content" data-marpit-advanced-background-split="right">
-<header><em>08.12.2022</em></header>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="3" data-header="_09.12.2022_" data-footer="![width:90 height:40](figures/logo/NGI/NGI_logo_transparent.gif)" data-class="split-text-image" data-theme="ngi-theme" class="split-text-image" style="--header:_09.12.2022_;--footer:![width:90 height:40](figures/logo/NGI/NGI_logo_transparent.gif);--class:split-text-image;--theme:ngi-theme;">
+<header><em>09.12.2022</em></header>
 
-<h1>What is a good <em>enough</em> model?</h1>
-<ul>
-<li>Use something simplified to learn about the real world</li>
-</ul>
-
-<h1>What is a good <em>enough</em> code?</h1>
-<footer><img src="figures/logo/NGI/NGI_logo_transparent.gif" alt="width:90 height:40" style="width:90px;height:40px;" />  <em>Figure credit: <a href="http://www.alibati.com/horse">Ali Bati</a></em> </footer>
-</section>
-</foreignObject><foreignObject width="1280" height="720" data-marpit-advanced-background="pseudo"><section style="" data-marpit-advanced-background="pseudo" data-marpit-pagination="6" data-marpit-pagination-total="28"></section></foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="7" data-paginate="true" data-header="_08.12.2022_" data-footer="![width:90 height:40](figures/logo/NGI/NGI_logo_transparent.gif)" data-class="split-text-image" data-theme="ngi-theme" class="split-text-image" data-marpit-pagination="7" data-marpit-pagination-total="28" style="--paginate:true;--header:_08.12.2022_;--footer:![width:90 height:40](figures/logo/NGI/NGI_logo_transparent.gif);--class:split-text-image;--theme:ngi-theme;">
-<header><em>08.12.2022</em></header>
-<h1>What is good (enough)?</h1>
+<h1>What is good <em>enough</em> code?</h1>
 <div class=ldiv>
 </div>
 <div class=rdiv>
@@ -81,11 +62,11 @@
 </div>
 <footer><img src="figures/logo/NGI/NGI_logo_transparent.gif" alt="width:90 height:40" style="width:90px;height:40px;" /></footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="8" data-paginate="true" data-header="_08.12.2022_" data-footer="&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp; &amp;nbsp; &amp;nbsp; [1] Neural Information Processing Systems: [The Machine Learning Reproducibility Checklist](https://www.cs.mcgill.ca/~jpineau/ReproducibilityChecklist.pdf), retrieved: 11.29, 25th of Febrauary 2022.&lt;br/&gt; ![width:90 height:40](figures/logo/NGI/NGI_logo_transparent.gif)  [2] Common estimate: annually spending 20% of the development time for maintenance work" data-class="split-text-image" data-theme="ngi-theme" class="split-text-image" data-marpit-pagination="8" data-marpit-pagination-total="28" style="--paginate:true;--header:_08.12.2022_;--class:split-text-image;--theme:ngi-theme;">
-<header><em>08.12.2022</em></header>
-<h1>What is good (enough)?</h1>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="4" data-header="_09.12.2022_" data-footer="&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp; &amp;nbsp; &amp;nbsp; [1] Neural Information Processing Systems: [The Machine Learning Reproducibility Checklist](https://www.cs.mcgill.ca/~jpineau/ReproducibilityChecklist.pdf), retrieved: 11.29, 25th of Febrauary 2022.&lt;br/&gt; ![width:90 height:40](figures/logo/NGI/NGI_logo_transparent.gif)  [2] Common estimate: annually spending 20% of the development time for maintenance work" data-class="split-text-image" data-theme="ngi-theme" class="split-text-image" style="--header:_09.12.2022_;--class:split-text-image;--theme:ngi-theme;">
+<header><em>09.12.2022</em></header>
+<h1>What is good <em>enough</em>  code?</h1>
 <div class=ldiv>
-<h2>My personal thoughts</h2>
+<h2>Some thoughts</h2>
 <ul>
 <li>Something that works</li>
 <li>Standardized</li>
@@ -99,51 +80,58 @@
 </div>
 <footer>                     [1] Neural Information Processing Systems: <a href="https://www.cs.mcgill.ca/~jpineau/ReproducibilityChecklist.pdf">The Machine Learning Reproducibility Checklist</a>, retrieved: 11.29, 25th of Febrauary 2022.<br /> <img src="figures/logo/NGI/NGI_logo_transparent.gif" alt="width:90 height:40" style="width:90px;height:40px;" />  [2] Common estimate: annually spending 20% of the development time for maintenance work</footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="9" data-paginate="true" data-header="_08.12.2022_" data-footer="![width:90 height:40](figures/logo/NGI/NGI_logo_transparent.gif)" data-theme="ngi-theme" data-marpit-pagination="9" data-marpit-pagination-total="28" style="--paginate:true;--header:_08.12.2022_;--footer:![width:90 height:40](figures/logo/NGI/NGI_logo_transparent.gif);--theme:ngi-theme;">
-<header><em>08.12.2022</em></header>
-<h1>How to get good enough software ?</h1>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="5" data-header="_09.12.2022_" data-footer="![width:90 height:40](figures/logo/NGI/NGI_logo_transparent.gif)" data-class="split-text-image" data-theme="ngi-theme" class="split-text-image" style="--header:_09.12.2022_;--footer:![width:90 height:40](figures/logo/NGI/NGI_logo_transparent.gif);--class:split-text-image;--theme:ngi-theme;">
+<header><em>09.12.2022</em></header>
+<h1>How to write code that</h1>
+<div class=ldiv>
+<h2>Gives you ....</h2>
 <ul>
-<li>Spend a lot of time and money?</li>
+<li>Something that works</li>
+<li>Standardized</li>
+<li>Understandable</li>
+<li>Reproducable</li>
+<li>Maintainable</li>
 </ul>
+<h2><span style="color:#F5F5F5">What is a good <em>enough</em> code model?</span>   ......?</h2>
+</div>
+<div class=rdiv>
+<p><img src="figures/illustrations/wtf.png" alt="w:550 h:450" style="width:550px;height:450px;" /></p>
+</div>
 <footer><img src="figures/logo/NGI/NGI_logo_transparent.gif" alt="width:90 height:40" style="width:90px;height:40px;" /></footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="10" data-paginate="true" data-header="_08.12.2022_" data-footer="![width:90 height:40](figures/logo/NGI/NGI_logo_transparent.gif)" data-theme="ngi-theme" data-marpit-pagination="10" data-marpit-pagination-total="28" style="--paginate:true;--header:_08.12.2022_;--footer:![width:90 height:40](figures/logo/NGI/NGI_logo_transparent.gif);--theme:ngi-theme;">
-<header><em>08.12.2022</em></header>
-<h1>REference to good enough software speed and time graph</h1>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="6" data-header="_09.12.2022_" data-footer="![width:90 height:40](figures/logo/NGI/NGI_logo_transparent.gif)" data-theme="ngi-theme" style="--header:_09.12.2022_;--footer:![width:90 height:40](figures/logo/NGI/NGI_logo_transparent.gif);--theme:ngi-theme;">
+<header><em>09.12.2022</em></header>
+<blockquote>
+<p>Know the rules so you know how to break them efficiently - Daila Lama</p>
+</blockquote>
 <footer><img src="figures/logo/NGI/NGI_logo_transparent.gif" alt="width:90 height:40" style="width:90px;height:40px;" /></footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="11" data-paginate="true" data-header="_08.12.2022_" data-footer="![width:90 height:40](figures/logo/NGI/NGI_logo_transparent.gif)" data-theme="ngi-theme" data-marpit-pagination="11" data-marpit-pagination-total="28" style="--paginate:true;--header:_08.12.2022_;--footer:![width:90 height:40](figures/logo/NGI/NGI_logo_transparent.gif);--theme:ngi-theme;">
-<header><em>08.12.2022</em></header>
-<h2>Good news: you can get a lot for free <img class="emoji" draggable="false" alt="😃" src="https://twemoji.maxcdn.com/2/svg/1f603.svg" data-marp-twemoji=""/></h2>
-<p>personal preferences here</p>
-<footer><img src="figures/logo/NGI/NGI_logo_transparent.gif" alt="width:90 height:40" style="width:90px;height:40px;" /></footer>
-</section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="12" data-paginate="true" data-header="_08.12.2022_" data-footer="![width:90 height:40](figures/logo/NGI/NGI_logo_transparent.gif)" data-theme="ngi-theme" data-marpit-pagination="12" data-marpit-pagination-total="28" style="--paginate:true;--header:_08.12.2022_;--footer:![width:90 height:40](figures/logo/NGI/NGI_logo_transparent.gif);--theme:ngi-theme;">
-<header><em>08.12.2022</em></header>
-<h1>General advice: automate as much as possible</h1>
-<footer><img src="figures/logo/NGI/NGI_logo_transparent.gif" alt="width:90 height:40" style="width:90px;height:40px;" /></footer>
-</section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="13" data-paginate="true" data-header="_08.12.2022_" data-footer="![width:90 height:40](figures/logo/NGI/NGI_logo_transparent.gif)" data-theme="ngi-theme" data-marpit-pagination="13" data-marpit-pagination-total="28" style="--paginate:true;--header:_08.12.2022_;--footer:![width:90 height:40](figures/logo/NGI/NGI_logo_transparent.gif);--theme:ngi-theme;">
-<header><em>08.12.2022</em></header>
-<p>You can do it in the cloud, but there are a lot of things you can do locally also</p>
-<h1>Enforce hooks with git,</h1>
-<p>post and pre</p>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="7" data-header="_09.12.2022_" data-footer="![width:90 height:40](figures/logo/NGI/NGI_logo_transparent.gif)" data-class="split-text-image" data-theme="ngi-theme" class="split-text-image" style="--header:_09.12.2022_;--footer:![width:90 height:40](figures/logo/NGI/NGI_logo_transparent.gif);--class:split-text-image;--theme:ngi-theme;">
+<header><em>09.12.2022</em></header>
+<h1><img src="figures/illustrations/python.png" alt="w:50 h:45" style="width:50px;height:45px;" />  Python</h1>
+<div class=ldiv>
+<h2></h2>
 <ul>
-<li>Automatically think about secrets ?</li>
+<li>High level programming language</li>
+<li>Dynamically typed
+<ul>
+<li>Easy to <em>use and misuse</em></li>
 </ul>
+</li>
+<li>Current version (7.12.22): 3.11.1</li>
+</ul>
+</div>
+<div class=rdiv>
+<p><img src="figures/illustrations/python_environment.png" alt="w:550 h:450" style="width:550px;height:450px;" /><br />
+<em>Figure credit: <a href="https://xkcd.com/1987/">xkcd</a></em></p>
+</div>
 <footer><img src="figures/logo/NGI/NGI_logo_transparent.gif" alt="width:90 height:40" style="width:90px;height:40px;" /></footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="14" data-paginate="true" data-header="_08.12.2022_" data-footer="![width:90 height:40](figures/logo/NGI/NGI_logo_transparent.gif)" data-theme="ngi-theme" data-marpit-pagination="14" data-marpit-pagination-total="28" style="--paginate:true;--header:_08.12.2022_;--footer:![width:90 height:40](figures/logo/NGI/NGI_logo_transparent.gif);--theme:ngi-theme;">
-<header><em>08.12.2022</em></header>
-<p>Show screenshots of the pre-commit folder changing color</p>
-<footer><img src="figures/logo/NGI/NGI_logo_transparent.gif" alt="width:90 height:40" style="width:90px;height:40px;" /></footer>
-</section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="15" data-paginate="true" data-header="_08.12.2022_" data-footer="![width:90 height:40](figures/logo/NGI/NGI_logo_transparent.gif)" data-theme="ngi-theme" data-marpit-pagination="15" data-marpit-pagination-total="28" style="--paginate:true;--header:_08.12.2022_;--footer:![width:90 height:40](figures/logo/NGI/NGI_logo_transparent.gif);--theme:ngi-theme;">
-<header><em>08.12.2022</em></header>
-<pre><code class="language-powershell"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap>Python <span class="hljs-number">3.10</span>.<span class="hljs-number">7</span> (tags/v3.<span class="hljs-number">10.7</span>:<span class="hljs-number">6</span>cc6b13, Sep  <span class="hljs-number">5</span> <span class="hljs-number">2022</span>, <span class="hljs-number">14</span>:<span class="hljs-number">08</span>:<span class="hljs-number">36</span>) [<span class="hljs-type">MSC</span> <span class="hljs-type">v.1933</span> <span class="hljs-number">64</span> <span class="hljs-type">bit</span> (<span class="hljs-type">AMD64</span>)] on win32
-<span class="hljs-built_in">Type</span> <span class="hljs-string">&quot;help&quot;</span>, <span class="hljs-string">&quot;copyright&quot;</span>, <span class="hljs-string">&quot;credits&quot;</span> or <span class="hljs-string">&quot;license&quot;</span> <span class="hljs-keyword">for</span> more information.
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="8" data-header="_09.12.2022_" data-footer="![width:90 height:40](figures/logo/NGI/NGI_logo_transparent.gif)" data-theme="ngi-theme" style="--header:_09.12.2022_;--footer:![width:90 height:40](figures/logo/NGI/NGI_logo_transparent.gif);--theme:ngi-theme;">
+<header><em>09.12.2022</em></header>
+<pre><code class="language-powershell"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap>Python <span class="hljs-number">3.11</span>.<span class="hljs-number">0</span> (main, Nov <span class="hljs-number">16</span> <span class="hljs-number">2022</span>, <span class="hljs-number">11</span>:<span class="hljs-number">26</span>:<span class="hljs-number">09</span>) [<span class="hljs-type">GCC</span> <span class="hljs-number">9.3</span><span class="hljs-type">.0</span>] on linux
 &gt;&gt;&gt; import this
-The Zen of Python, by Tim Peter
+The Zen of Python, by Tim Peters
 Beautiful is better than ugly.
 Explicit is better than implicit.
 Simple is better than complex.
@@ -163,122 +151,153 @@ Although never is often better than *right* now.
 <span class="hljs-keyword">If</span> the implementation is hard to explain, it<span class="hljs-string">&#x27;s a bad idea.
 If the implementation is easy to explain, it may be a good idea.
 Namespaces are one honking great idea -- let&#x27;</span>s <span class="hljs-keyword">do</span> more of those!
-&gt;&gt;&gt;
 </span></span></foreignObject></svg></code></pre>
 <footer><img src="figures/logo/NGI/NGI_logo_transparent.gif" alt="width:90 height:40" style="width:90px;height:40px;" /></footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="16" data-paginate="true" data-header="_08.12.2022_" data-footer="![width:90 height:40](figures/logo/NGI/NGI_logo_transparent.gif)" data-theme="ngi-theme" data-marpit-pagination="16" data-marpit-pagination-total="28" style="--paginate:true;--header:_08.12.2022_;--footer:![width:90 height:40](figures/logo/NGI/NGI_logo_transparent.gif);--theme:ngi-theme;">
-<header><em>08.12.2022</em></header>
-<h1>Pythoninc advices:</h1>
-<blockquote>
-<p>Know the rules so you know how to break them efficiently - Daila Lama</p>
-</blockquote>
-<p><em><a href="https://hacktoon.com/posts/2016/the-zen-of-python-illustrated/">The zen of Python Illustrated</a></em></p>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="9" data-header="_09.12.2022_" data-footer="![width:90 height:40](figures/logo/NGI/NGI_logo_transparent.gif)" data-class="split-text-image" data-theme="ngi-theme" class="split-text-image" style="--header:_09.12.2022_;--footer:![width:90 height:40](figures/logo/NGI/NGI_logo_transparent.gif);--class:split-text-image;--theme:ngi-theme;">
+<header><em>09.12.2022</em></header>
+
+<h1>The PEPs</h1>
+<div class=ldiv>
+<p>A Python Enhancement Proposal <a href="https://peps.python.org/pep-0000/">(PEP)</a> is a design document for python code</p>
+<h2>Why should <strong>you</strong> care about the PEPs?</h2>
+<span style="color:#F5F5F5">
+- *Code is read more often then it is written* - Guido Van Rossum 
+- Standardization 
+- Automation 
+</span>
+</div>
+<div class=rdiv>
+</div>
 <footer><img src="figures/logo/NGI/NGI_logo_transparent.gif" alt="width:90 height:40" style="width:90px;height:40px;" /></footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="17" data-paginate="true" data-header="_08.12.2022_" data-footer="![width:90 height:40](figures/logo/NGI/NGI_logo_transparent.gif)" data-theme="ngi-theme" data-marpit-pagination="17" data-marpit-pagination-total="28" style="--paginate:true;--header:_08.12.2022_;--footer:![width:90 height:40](figures/logo/NGI/NGI_logo_transparent.gif);--theme:ngi-theme;">
-<header><em>08.12.2022</em></header>
-<h1>A language problem</h1>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="10" data-header="_09.12.2022_" data-footer="![width:90 height:40](figures/logo/NGI/NGI_logo_transparent.gif)" data-class="split-text-image" data-theme="ngi-theme" class="split-text-image" style="--header:_09.12.2022_;--footer:![width:90 height:40](figures/logo/NGI/NGI_logo_transparent.gif);--class:split-text-image;--theme:ngi-theme;">
+<header><em>09.12.2022</em></header>
+
+<h1>The PEPs</h1>
+<div class=ldiv>
+<p>A Python Enhancement Proposal <a href="https://peps.python.org/pep-0000/">(PEP)</a> is a design document for python code</p>
+<h2>Why should <strong>you</strong> care about the PEPs?</h2>
+<ul>
+<li><em>Code is read more often then it is written</em> - Guido Van Rossum</li>
+<li>Standardization</li>
+<li>Automation</li>
+</ul>
+</div> 
+<div class=rdiv>
+<p><img src="figures/illustrations/dependency.png" alt="w:400 h:425" style="width:400px;height:425px;" /><br />
+<em>Image credit: <a href="https://xkcd.com/2347/">xkcd</a></em></p>
+</div>
 <footer><img src="figures/logo/NGI/NGI_logo_transparent.gif" alt="width:90 height:40" style="width:90px;height:40px;" /></footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="18" data-paginate="true" data-header="_08.12.2022_" data-footer="![width:90 height:40](figures/logo/NGI/NGI_logo_transparent.gif)" data-theme="ngi-theme" data-marpit-pagination="18" data-marpit-pagination-total="28" style="--paginate:true;--header:_08.12.2022_;--footer:![width:90 height:40](figures/logo/NGI/NGI_logo_transparent.gif);--theme:ngi-theme;">
-<header><em>08.12.2022</em></header>
-<p>Python is a high level programming language that ueses dynamic typing (in contrast to C/C++/Fortran where the variables are static) you do not need to declare types of variables, parameters, and return values from a function upfront. The return types can be any type and the types of the variables can change during run time. Dynamic typing leads to bugs that can be very difficult to debug.</p>
-<p><a href="https://peps.python.org/pep-0484/">PEP 484 - type hints </a> (already suggested from 2014) suggests using annotation for types and return values from functions. Type hints were introduced as a new feature in Python 3.5.</p>
-<p><a href="https://mypy.readthedocs.io/en/stable/">mypy</a> is a static type checker for Python 3 that helps us to run type checks and catch bugs.</p>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="11" data-header="_09.12.2022_" data-footer="![width:90 height:40](figures/logo/NGI/NGI_logo_transparent.gif)" data-class="split-text" data-theme="ngi-theme" class="split-text" style="--header:_09.12.2022_;--footer:![width:90 height:40](figures/logo/NGI/NGI_logo_transparent.gif);--class:split-text;--theme:ngi-theme;">
+<header><em>09.12.2022</em></header>
+
+<h1>Our best PEP friends</h1>
+<div class=ldiv>
+<h2><a href="https://peps.python.org/pep-0484/">PEP 484</a></h2>
+<ul>
+<li>Type annotation
+<ul>
+<li>Released 2015-09-13</li>
+</ul>
+</li>
+<li>Tool
+<ul>
+<li><a href="https://mypy.readthedocs.io/en/stable/">mypy</a></li>
+</ul>
+</li>
+</ul>
+</div> 
+<div class=rdiv>
+<h2><a href="https://peps.python.org/pep-0008/">PEP 8</a></h2>
+<ul>
+<li>Style guide for Python Code
+<ul>
+<li>Released 2013-08-01</li>
+</ul>
+</li>
+<li>Tool
+<ul>
+<li><a href="https://black.readthedocs.io/en/stable/">black</a></li>
+<li><a href="https://flake8.pycqa.org/en/latest/">flake8</a></li>
+<li><a href="https://pycqa.github.io/isort/">isort</a></li>
+</ul>
+</li>
+</ul>
+</div>
 <footer><img src="figures/logo/NGI/NGI_logo_transparent.gif" alt="width:90 height:40" style="width:90px;height:40px;" /></footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="19" data-paginate="true" data-header="_08.12.2022_" data-footer="![width:90 height:40](figures/logo/NGI/NGI_logo_transparent.gif)" data-theme="ngi-theme" data-marpit-pagination="19" data-marpit-pagination-total="28" style="--paginate:true;--header:_08.12.2022_;--footer:![width:90 height:40](figures/logo/NGI/NGI_logo_transparent.gif);--theme:ngi-theme;">
-<header><em>08.12.2022</em></header>
-<h1>Type hints (help with static checks)</h1>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="12" data-header="_09.12.2022_" data-footer="![width:90 height:40](figures/logo/NGI/NGI_logo_transparent.gif)" data-theme="ngi-theme" style="--header:_09.12.2022_;--footer:![width:90 height:40](figures/logo/NGI/NGI_logo_transparent.gif);--theme:ngi-theme;">
+<header><em>09.12.2022</em></header>
+<h1>Type hints</h1>
 <pre><code class="language-python"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-comment"># this file is named factorial.py</span>
 <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">factorial</span>(<span class="hljs-params">n</span>):</span>
     <span class="hljs-keyword">if</span> n &lt; <span class="hljs-number">2</span>:
         <span class="hljs-keyword">return</span> <span class="hljs-number">1</span>
     <span class="hljs-keyword">return</span> n * factorial(n - <span class="hljs-number">1</span>)
- 
-my_int = <span class="hljs-number">4</span> 
-<span class="hljs-built_in">print</span>(<span class="hljs-string">f&quot;value is: <span class="hljs-subst">{factorial(my_int)}</span>&quot;</span>)
 
-my_string = <span class="hljs-string">&quot;4&quot;</span>
-<span class="hljs-built_in">print</span>(<span class="hljs-string">f&quot;value is: <span class="hljs-subst">{factorial(my_string)}</span>&quot;</span>)
+<span class="hljs-built_in">print</span>(<span class="hljs-string">f&quot;value is: <span class="hljs-subst">{factorial(<span class="hljs-number">4</span>)}</span>&quot;</span>)
+<span class="hljs-built_in">print</span>(<span class="hljs-string">f&quot;value is: <span class="hljs-subst">{factorial(<span class="hljs-string">&#x27;4&#x27;</span>)}</span>&quot;</span>)
 </span></span></foreignObject></svg></code></pre>
-<pre><code class="language-python"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap>value <span class="hljs-keyword">is</span>: <span class="hljs-number">24</span>
+<pre><code class="language-python"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap>(pre-commits-python-example-py3<span class="hljs-number">.11</span>):~/good-scientific-software-<span class="hljs-keyword">for</span>-free-python-demo(main)$ python factorial.py
+value <span class="hljs-keyword">is</span>: <span class="hljs-number">24</span>
 Traceback (most recent call last):
-  File <span class="hljs-string">&quot;C:\Users\SuI\test-factorial\type_hint_example\type_hint_example\factorial.py&quot;</span>, line <span class="hljs-number">13</span>, <span class="hljs-keyword">in</span> &lt;module&gt;
-    <span class="hljs-built_in">print</span>(<span class="hljs-string">f&quot;value is: <span class="hljs-subst">{factorial(my_string)}</span>&quot;</span>)
-  File <span class="hljs-string">&quot;C:\Users\SuI\test-factorial\type_hint_example\type_hint_example\factorial.py&quot;</span>, line <span class="hljs-number">2</span>, <span class="hljs-keyword">in</span> factorial
+  File <span class="hljs-string">&quot;/home/sunnivin/NGI/slides/good-scientific-software-for-free/good-scientific-software-for-free-python-demo/factorial.py&quot;</span>, line <span class="hljs-number">14</span>, <span class="hljs-keyword">in</span> &lt;module&gt;
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">f&quot;value is: <span class="hljs-subst">{factorial(<span class="hljs-string">&#x27;4&#x27;</span>)}</span>&quot;</span>)
+                       ^^^^^^^^^^^^^^
+  File <span class="hljs-string">&quot;/home/sunnivin/NGI/slides/good-scientific-software-for-free/good-scientific-software-for-free-python-demo/factorial.py&quot;</span>, line <span class="hljs-number">8</span>, <span class="hljs-keyword">in</span> factorial
     <span class="hljs-keyword">if</span> n &lt; <span class="hljs-number">2</span>:
+       ^^^^^
 TypeError: <span class="hljs-string">&#x27;&lt;&#x27;</span> <span class="hljs-keyword">not</span> supported between instances of <span class="hljs-string">&#x27;str&#x27;</span> <span class="hljs-keyword">and</span> <span class="hljs-string">&#x27;int&#x27;</span>
 </span></span></foreignObject></svg></code></pre>
 <footer><img src="figures/logo/NGI/NGI_logo_transparent.gif" alt="width:90 height:40" style="width:90px;height:40px;" /></footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="20" data-paginate="true" data-header="_08.12.2022_" data-footer="![width:90 height:40](figures/logo/NGI/NGI_logo_transparent.gif)" data-theme="ngi-theme" data-marpit-pagination="20" data-marpit-pagination-total="28" style="--paginate:true;--header:_08.12.2022_;--footer:![width:90 height:40](figures/logo/NGI/NGI_logo_transparent.gif);--theme:ngi-theme;">
-<header><em>08.12.2022</em></header>
-<h2>Adding type hints</h2>
-<pre><code class="language-python"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-comment"># this file is named factorial_int.py</span>
-<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">factorial_int</span>(<span class="hljs-params">n: <span class="hljs-built_in">int</span> </span>) -&gt; <span class="hljs-built_in">int</span>:</span>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="13" data-header="_09.12.2022_" data-footer="![width:90 height:40](figures/logo/NGI/NGI_logo_transparent.gif)" data-theme="ngi-theme" style="--header:_09.12.2022_;--footer:![width:90 height:40](figures/logo/NGI/NGI_logo_transparent.gif);--theme:ngi-theme;">
+<header><em>09.12.2022</em></header>
+<h1>Type hints</h1>
+<p>Update function to include type hints</p>
+<pre><code class="language-python"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-comment"># this file is named factorial.py</span>
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">factorial</span>(<span class="hljs-params">n: <span class="hljs-built_in">int</span> </span>) -&gt; <span class="hljs-built_in">int</span>:</span>
     <span class="hljs-keyword">if</span> n &lt; <span class="hljs-number">2</span>:
         <span class="hljs-keyword">return</span> <span class="hljs-number">1</span>
     <span class="hljs-keyword">return</span> n * factorial_int(n - <span class="hljs-number">1</span>)
 
-<span class="hljs-built_in">print</span>(<span class="hljs-string">f&quot;value is: <span class="hljs-subst">{factorial_int(<span class="hljs-number">4</span>)}</span>&quot;</span>)
- 
 
-<span class="hljs-built_in">print</span>(<span class="hljs-string">f&quot;value is: <span class="hljs-subst">{factorial_int(<span class="hljs-number">4.5</span>)}</span>&quot;</span>)
+<span class="hljs-built_in">print</span>(<span class="hljs-string">f&quot;value is: <span class="hljs-subst">{factorial(<span class="hljs-number">4</span>)}</span>&quot;</span>)
+<span class="hljs-built_in">print</span>(<span class="hljs-string">f&quot;value is: <span class="hljs-subst">{factorial(<span class="hljs-number">4.5</span>)}</span>&quot;</span>)
 </span></span></foreignObject></svg></code></pre>
 <p>Output</p>
-<pre><code class="language-powershell"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap>(<span class="hljs-built_in">type</span><span class="hljs-literal">-hint</span><span class="hljs-literal">-example</span><span class="hljs-literal">-py3</span>.<span class="hljs-number">10</span>) python .\type_hint_example\factorial_int.py
+<pre><code class="language-powershell"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap>(pre<span class="hljs-literal">-commits</span><span class="hljs-literal">-python</span><span class="hljs-literal">-example</span><span class="hljs-literal">-py3</span>.<span class="hljs-number">11</span>):~/good<span class="hljs-literal">-scientific</span><span class="hljs-literal">-software</span><span class="hljs-literal">-for</span><span class="hljs-literal">-free</span><span class="hljs-literal">-python</span><span class="hljs-literal">-demo</span>(main)<span class="hljs-variable">$</span> python factorial.py
 value is: <span class="hljs-number">24</span>
 value is: <span class="hljs-number">39.375</span>
 </span></span></foreignObject></svg></code></pre>
 <footer><img src="figures/logo/NGI/NGI_logo_transparent.gif" alt="width:90 height:40" style="width:90px;height:40px;" /></footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="21" data-paginate="true" data-header="_08.12.2022_" data-footer="![width:90 height:40](figures/logo/NGI/NGI_logo_transparent.gif)" data-theme="ngi-theme" data-marpit-pagination="21" data-marpit-pagination-total="28" style="--paginate:true;--header:_08.12.2022_;--footer:![width:90 height:40](figures/logo/NGI/NGI_logo_transparent.gif);--theme:ngi-theme;">
-<header><em>08.12.2022</em></header>
-<h2>Is this pythonically correct?</h2>
-<pre><code class="language-powershell"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap>(<span class="hljs-built_in">type</span><span class="hljs-literal">-hint</span><span class="hljs-literal">-example</span><span class="hljs-literal">-py3</span>.<span class="hljs-number">10</span>) mypy .\type_hint_example\factorial_int.py
-type_hint_example\factorial_int.py:<span class="hljs-number">12</span>: error: Argument <span class="hljs-number">1</span> to <span class="hljs-string">&quot;factorial_int&quot;</span> has incompatible <span class="hljs-built_in">type</span> <span class="hljs-string">&quot;float&quot;</span>; expected <span class="hljs-string">&quot;int&quot;</span>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="14" data-header="_09.12.2022_" data-footer="&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;  &lt;br/&gt; ![width:90 height:40](figures/logo/NGI/NGI_logo_transparent.gif) [1] Actually agreeable with [Pydantic](https://pydantic-docs.helpmanual.io/), [Pandera](https://pandera.readthedocs.io/en/stable/), retrieved: 15.11, 30th of November 2022 :heart_eyes:" data-theme="ngi-theme" style="--header:_09.12.2022_;--theme:ngi-theme;">
+<header><em>09.12.2022</em></header>
+
+<h1>Type hints</h1>
+<h2>Was this pythonically correct?</h2>
+<pre><code class="language-powershell"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap>(pre<span class="hljs-literal">-commits</span><span class="hljs-literal">-python</span><span class="hljs-literal">-example</span><span class="hljs-literal">-py3</span>.<span class="hljs-number">11</span>):~/good<span class="hljs-literal">-scientific</span><span class="hljs-literal">-software</span><span class="hljs-literal">-for</span><span class="hljs-literal">-free</span><span class="hljs-literal">-python</span><span class="hljs-literal">-demo</span>(main)<span class="hljs-variable">$</span> python factorial.py
+value is: <span class="hljs-number">24</span>
+<img class="emoji" draggable="false" alt="😱" src="https://twemoji.maxcdn.com/2/svg/1f631.svg" data-marp-twemoji=""/> value is: <span class="hljs-number">39.375</span> <img class="emoji" draggable="false" alt="😱" src="https://twemoji.maxcdn.com/2/svg/1f631.svg" data-marp-twemoji=""/>
+</span></span></foreignObject></svg></code></pre>
+<p>Check with <code>mypy</code></p>
+<pre><code class="language-powershell"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap>(pre<span class="hljs-literal">-commits</span><span class="hljs-literal">-python</span><span class="hljs-literal">-example</span><span class="hljs-literal">-py3</span>.<span class="hljs-number">11</span>):~/good<span class="hljs-literal">-scientific</span><span class="hljs-literal">-software</span><span class="hljs-literal">-for</span><span class="hljs-literal">-free</span><span class="hljs-literal">-python</span><span class="hljs-literal">-demo</span>(main)<span class="hljs-variable">$</span> mypy factorial.py
+factorial.py:<span class="hljs-number">14</span>: error: Argument <span class="hljs-number">1</span> to <span class="hljs-string">&quot;factorial&quot;</span> has incompatible <span class="hljs-built_in">type</span> <span class="hljs-string">&quot;float&quot;</span>; expected <span class="hljs-string">&quot;int&quot;</span>  [<span class="hljs-type">arg</span>-<span class="hljs-type">type</span>]
 Found <span class="hljs-number">1</span> error <span class="hljs-keyword">in</span> <span class="hljs-number">1</span> file (checked <span class="hljs-number">1</span> source file)
 </span></span></foreignObject></svg></code></pre>
-<p>My error is catched</p>
-<footer><img src="figures/logo/NGI/NGI_logo_transparent.gif" alt="width:90 height:40" style="width:90px;height:40px;" /></footer>
+<p><img class="emoji" draggable="false" alt="😱" src="https://twemoji.maxcdn.com/2/svg/1f631.svg" data-marp-twemoji=""/> what about data and type hints<sup>[1]</sup>? <img class="emoji" draggable="false" alt="😱" src="https://twemoji.maxcdn.com/2/svg/1f631.svg" data-marp-twemoji=""/></p>
+<footer>                       <br /> <img src="figures/logo/NGI/NGI_logo_transparent.gif" alt="width:90 height:40" style="width:90px;height:40px;" /> [1] Actually agreeable with <a href="https://pydantic-docs.helpmanual.io/">Pydantic</a>, <a href="https://pandera.readthedocs.io/en/stable/">Pandera</a>, retrieved: 15.11, 30th of November 2022 <img class="emoji" draggable="false" alt="😍" src="https://twemoji.maxcdn.com/2/svg/1f60d.svg" data-marp-twemoji=""/></footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="22" data-paginate="true" data-header="_08.12.2022_" data-footer="![width:90 height:40](figures/logo/NGI/NGI_logo_transparent.gif)" data-theme="ngi-theme" data-marpit-pagination="22" data-marpit-pagination-total="28" style="--paginate:true;--header:_08.12.2022_;--footer:![width:90 height:40](figures/logo/NGI/NGI_logo_transparent.gif);--theme:ngi-theme;">
-<header><em>08.12.2022</em></header>
-<h2>Other cool tools for model validation</h2>
-<p>By updating the code to use <code>float</code> instead of <code>int</code> I will have a code that uses the correct types.</p>
-<pre><code class="language-python"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-comment"># this file is named factorial_float.py</span>
-<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">factorial_float</span>(<span class="hljs-params">n: <span class="hljs-built_in">float</span></span>) -&gt; <span class="hljs-built_in">float</span>:</span>
-    <span class="hljs-keyword">if</span> n &lt; <span class="hljs-number">2</span>:
-        <span class="hljs-keyword">return</span> <span class="hljs-number">1</span>
-    <span class="hljs-keyword">return</span> n * factorial_float(n - <span class="hljs-number">1</span>)
-</span></span></foreignObject></svg></code></pre>
-<footer><img src="figures/logo/NGI/NGI_logo_transparent.gif" alt="width:90 height:40" style="width:90px;height:40px;" /></footer>
-</section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="23" data-paginate="true" data-header="_08.12.2022_" data-footer="&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp; &amp;nbsp; &amp;nbsp; [1] Actually agreeable [Pydantic](https://pydantic-docs.helpmanual.io/), [Pandera](https://pandera.readthedocs.io/en/stable/), retrieved: 15.11, 30th of November 2022 :heart_eyes: &lt;br/&gt; ![width:90 height:40](figures/logo/NGI/NGI_logo_transparent.gif)" data-theme="ngi-theme" data-marpit-pagination="23" data-marpit-pagination-total="28" style="--paginate:true;--header:_08.12.2022_;--theme:ngi-theme;">
-<header><em>08.12.2022</em></header>
-<p>Running the code still provides the same answer,</p>
-<pre><code class="language-powershell"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap>(<span class="hljs-built_in">type</span><span class="hljs-literal">-hint</span><span class="hljs-literal">-example</span><span class="hljs-literal">-py3</span>.<span class="hljs-number">10</span>) python .\type_hint_example\factorial_float.py
-value is: <span class="hljs-number">24</span>
-value is: <span class="hljs-number">39.375</span>
-</span></span></foreignObject></svg></code></pre>
-<p>but now the code is also statically valid</p>
-<pre><code class="language-powershell"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap>(<span class="hljs-built_in">type</span><span class="hljs-literal">-hint</span><span class="hljs-literal">-example</span><span class="hljs-literal">-py3</span>.<span class="hljs-number">10</span>) mypy .\type_hint_example\factorial_float.py
-Success: no issues found <span class="hljs-keyword">in</span> <span class="hljs-number">1</span> source file
-</span></span></foreignObject></svg></code></pre>
-<p><img class="emoji" draggable="false" alt="😱" src="https://twemoji.maxcdn.com/2/svg/1f631.svg" data-marp-twemoji=""/> what about data and type hints<sup>[1]</sup>?</p>
-<footer>                     [1] Actually agreeable <a href="https://pydantic-docs.helpmanual.io/">Pydantic</a>, <a href="https://pandera.readthedocs.io/en/stable/">Pandera</a>, retrieved: 15.11, 30th of November 2022 <img class="emoji" draggable="false" alt="😍" src="https://twemoji.maxcdn.com/2/svg/1f60d.svg" data-marp-twemoji=""/> <br /> <img src="figures/logo/NGI/NGI_logo_transparent.gif" alt="width:90 height:40" style="width:90px;height:40px;" /></footer>
-</section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="24" data-paginate="true" data-header="_08.12.2022_" data-footer="![width:90 height:40](figures/logo/NGI/NGI_logo_transparent.gif)" data-theme="ngi-theme" data-marpit-pagination="24" data-marpit-pagination-total="28" style="--paginate:true;--header:_08.12.2022_;--footer:![width:90 height:40](figures/logo/NGI/NGI_logo_transparent.gif);--theme:ngi-theme;">
-<header><em>08.12.2022</em></header>
-<h2>Follow the python style guide</h2>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="15" data-header="_09.12.2022_" data-footer="![width:90 height:40](figures/logo/NGI/NGI_logo_transparent.gif)" data-theme="ngi-theme" style="--header:_09.12.2022_;--footer:![width:90 height:40](figures/logo/NGI/NGI_logo_transparent.gif);--theme:ngi-theme;">
+<header><em>09.12.2022</em></header>
+<h1>Style guide</h1>
+<h2><a href="https://peps.python.org/pep-0008/#indentation">Indentation</a></h2>
 <blockquote>
-<p>Readability counts</p>
+<p>Use 4 spaces per indentation level.</p>
 </blockquote>
-<p><a href="https://peps.python.org/pep-0008/">PEP 8</a> gives general guidelines for your code style like whitespace expressions, comments, naming, etc.</p>
-<h4>Examples from the official documentation</h4>
-<p><strong>Indentation</strong></p>
 <pre><code class="language-python"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-comment"># Correct: aligned with opening delimiter.</span>
 foo = long_function_name(var_one, var_two,
                          var_three, var_four)
@@ -287,7 +306,12 @@ foo = long_function_name(var_one, var_two,
 foo = long_function_name(var_one, var_two,
     var_three, var_four)
 </span></span></foreignObject></svg></code></pre>
-<p><strong>Names to avoid</strong></p>
+<footer><img src="figures/logo/NGI/NGI_logo_transparent.gif" alt="width:90 height:40" style="width:90px;height:40px;" /></footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="16" data-header="_09.12.2022_" data-footer="![width:90 height:40](figures/logo/NGI/NGI_logo_transparent.gif)" data-theme="ngi-theme" style="--header:_09.12.2022_;--footer:![width:90 height:40](figures/logo/NGI/NGI_logo_transparent.gif);--theme:ngi-theme;">
+<header><em>09.12.2022</em></header>
+<h1>Style guide</h1>
+<h2><a href="https://peps.python.org/pep-0008/#names-to-avoid">Names to avoid</a></h2>
 <blockquote>
 <p>Never use the characters ‘l’ (lowercase letter el), ‘O’ (uppercase letter &gt; oh), or ‘I’ (uppercase letter eye) as single character variable names.<br />
 In some fonts, these characters are indistinguishable from the numerals one and zero. When tempted to use ‘l’, use ‘L’ instead.</p>
@@ -295,75 +319,247 @@ In some fonts, these characters are indistinguishable from the numerals one and 
 <pre><code class="language-python"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap>l : string = <span class="hljs-string">&quot;my_string&quot;</span>
 <span class="hljs-number">1</span> : <span class="hljs-built_in">float</span> = <span class="hljs-number">4.5</span>
 </span></span></foreignObject></svg></code></pre>
-<p>Why does this matter? Because you are working on making things more standardized. Getting all these things right seems difficult. They are only tools that can help you achieve <em>good code</em> (whatever you define as good code). Luckily python has an excellent ensemble of available tools to help you spend less time following these rules and more time on focus on implementation. Black will help you to reformat your code, and flake8 can check for coding style and errors against PEP8.</p>
 <footer><img src="figures/logo/NGI/NGI_logo_transparent.gif" alt="width:90 height:40" style="width:90px;height:40px;" /></footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="25" data-paginate="true" data-header="_08.12.2022_" data-footer="![width:90 height:40](figures/logo/NGI/NGI_logo_transparent.gif)" data-theme="ngi-theme" data-marpit-pagination="25" data-marpit-pagination-total="28" style="--paginate:true;--header:_08.12.2022_;--footer:![width:90 height:40](figures/logo/NGI/NGI_logo_transparent.gif);--theme:ngi-theme;">
-<header><em>08.12.2022</em></header>
-<h4>Example with black</h4>
-<p>The following code can run correctly, but is not correctly formatted according to PEP8 because of the extra indents.</p>
-<pre><code class="language-python"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-comment"># this file is named factorial_float.py</span>
-<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">factorial_float</span>(<span class="hljs-params">
-    n: <span class="hljs-built_in">float</span></span>) -&gt; <span class="hljs-built_in">float</span>:</span>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="17" data-header="_09.12.2022_" data-footer="![width:90 height:40](figures/logo/NGI/NGI_logo_transparent.gif)" data-theme="ngi-theme" style="--header:_09.12.2022_;--footer:![width:90 height:40](figures/logo/NGI/NGI_logo_transparent.gif);--theme:ngi-theme;">
+<header><em>09.12.2022</em></header>
+<h1>Style guide</h1>
+<p>The following code can run correctly, but is not correctly formatted according to PEP8</p>
+<pre><code class="language-python"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-comment"># this file is named factorial.py</span>
+<span class="hljs-keyword">from</span> pathlib <span class="hljs-keyword">import</span> Path
+<span class="hljs-keyword">import</span> math 
+
+l = <span class="hljs-number">42</span> 
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">factorial</span>(<span class="hljs-params">
+    n: <span class="hljs-built_in">int</span></span>) -&gt; <span class="hljs-built_in">int</span>        :</span>
     <span class="hljs-keyword">if</span> n &lt;          <span class="hljs-number">2</span>:
         <span class="hljs-keyword">return</span> <span class="hljs-number">1</span>
-    <span class="hljs-keyword">return</span> n * factorial_float(n - <span class="hljs-number">1</span>)
+    <span class="hljs-keyword">return</span>           n * factorial(n - <span class="hljs-number">1</span>)
+
+<span class="hljs-built_in">print</span>(<span class="hljs-string">f&quot;value is: <span class="hljs-subst">{factorial(<span class="hljs-number">4</span>)}</span>&quot;</span>)
 </span></span></foreignObject></svg></code></pre>
-<p>By running black from the terminal</p>
-<pre><code class="language-powershell"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap>(<span class="hljs-built_in">type</span><span class="hljs-literal">-hint</span><span class="hljs-literal">-example</span><span class="hljs-literal">-py3</span>.<span class="hljs-number">10</span>) black .\type_hint_example\factorial_float.py
-reformatted type_hint_example\factorial_float.py
+<footer><img src="figures/logo/NGI/NGI_logo_transparent.gif" alt="width:90 height:40" style="width:90px;height:40px;" /></footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="18" data-header="_09.12.2022_" data-footer="![width:90 height:40](figures/logo/NGI/NGI_logo_transparent.gif)" data-theme="ngi-theme" style="--header:_09.12.2022_;--footer:![width:90 height:40](figures/logo/NGI/NGI_logo_transparent.gif);--theme:ngi-theme;">
+<header><em>09.12.2022</em></header>
+<h1>isort</h1>
+<pre><code class="language-powershell"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap>(pre<span class="hljs-literal">-commits</span><span class="hljs-literal">-python</span><span class="hljs-literal">-example</span><span class="hljs-literal">-py3</span>.<span class="hljs-number">11</span>):~/good<span class="hljs-literal">-scientific</span><span class="hljs-literal">-software</span><span class="hljs-literal">-for</span><span class="hljs-literal">-free</span><span class="hljs-literal">-python</span><span class="hljs-literal">-demo</span>(main)<span class="hljs-variable">$</span> isort factorial.py
+</span></span></foreignObject></svg></code></pre>
+<pre><code class="language-python"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-keyword">import</span> math
+<span class="hljs-keyword">from</span> pathlib <span class="hljs-keyword">import</span> Path
+
+l = <span class="hljs-number">42</span> 
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">factorial</span>(<span class="hljs-params">
+    n: <span class="hljs-built_in">int</span></span>) -&gt; <span class="hljs-built_in">int</span>        :</span>
+    <span class="hljs-keyword">if</span> n &lt;          <span class="hljs-number">2</span>:
+        <span class="hljs-keyword">return</span> <span class="hljs-number">1</span>
+    <span class="hljs-keyword">return</span>           n * factorial(n - <span class="hljs-number">1</span>)
+
+<span class="hljs-built_in">print</span>(<span class="hljs-string">f&quot;value is: <span class="hljs-subst">{factorial(<span class="hljs-number">4</span>)}</span>&quot;</span>)
+</span></span></foreignObject></svg></code></pre>
+<footer><img src="figures/logo/NGI/NGI_logo_transparent.gif" alt="width:90 height:40" style="width:90px;height:40px;" /></footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="19" data-header="_09.12.2022_" data-footer="![width:90 height:40](figures/logo/NGI/NGI_logo_transparent.gif)" data-theme="ngi-theme" style="--header:_09.12.2022_;--footer:![width:90 height:40](figures/logo/NGI/NGI_logo_transparent.gif);--theme:ngi-theme;">
+<header><em>09.12.2022</em></header>
+<h1>Flake8</h1>
+<pre><code class="language-powershell"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap>(pre<span class="hljs-literal">-commits</span><span class="hljs-literal">-python</span><span class="hljs-literal">-example</span><span class="hljs-literal">-py3</span>.<span class="hljs-number">11</span>):~/good<span class="hljs-literal">-scientific</span><span class="hljs-literal">-software</span><span class="hljs-literal">-for</span><span class="hljs-literal">-free</span><span class="hljs-literal">-python</span><span class="hljs-literal">-demo</span>(main)<span class="hljs-variable">$</span> flake8 factorial.py
+factorial.py:<span class="hljs-number">1</span>:<span class="hljs-number">1</span>: F401 <span class="hljs-string">&#x27;math&#x27;</span> imported but unused
+factorial.py:<span class="hljs-number">2</span>:<span class="hljs-number">1</span>: F401 <span class="hljs-string">&#x27;pathlib.Path&#x27;</span> imported but unused
+factorial.py:<span class="hljs-number">4</span>:<span class="hljs-number">1</span>: E741 ambiguous variable name <span class="hljs-string">&#x27;l&#x27;</span>
+</span></span></foreignObject></svg></code></pre>
+<footer><img src="figures/logo/NGI/NGI_logo_transparent.gif" alt="width:90 height:40" style="width:90px;height:40px;" /></footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="20" data-header="_09.12.2022_" data-footer="![width:90 height:40](figures/logo/NGI/NGI_logo_transparent.gif)" data-theme="ngi-theme" style="--header:_09.12.2022_;--footer:![width:90 height:40](figures/logo/NGI/NGI_logo_transparent.gif);--theme:ngi-theme;">
+<header><em>09.12.2022</em></header>
+<h1>Black</h1>
+<pre><code class="language-powershell"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap>(pre<span class="hljs-literal">-commits</span><span class="hljs-literal">-python</span><span class="hljs-literal">-example</span><span class="hljs-literal">-py3</span>.<span class="hljs-number">11</span>):~/good<span class="hljs-literal">-scientific</span><span class="hljs-literal">-software</span><span class="hljs-literal">-for</span><span class="hljs-literal">-free</span><span class="hljs-literal">-python</span><span class="hljs-literal">-demo</span>(main)<span class="hljs-variable">$</span> black factorial.py
+reformatted factorial.py
 
 All done! <img class="emoji" draggable="false" alt="✨" src="https://twemoji.maxcdn.com/2/svg/2728.svg" data-marp-twemoji=""/> <img class="emoji" draggable="false" alt="🍰" src="https://twemoji.maxcdn.com/2/svg/1f370.svg" data-marp-twemoji=""/> <img class="emoji" draggable="false" alt="✨" src="https://twemoji.maxcdn.com/2/svg/2728.svg" data-marp-twemoji=""/>
 <span class="hljs-number">1</span> file reformatted.
 </span></span></foreignObject></svg></code></pre>
-<p>the code is automatically formatted to</p>
-<pre><code class="language-python"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-comment"># this file is named factorial_float.py</span>
-<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">factorial_float</span>(<span class="hljs-params">n: <span class="hljs-built_in">float</span></span>) -&gt; <span class="hljs-built_in">float</span>:</span>
+<pre><code class="language-python"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">factorial</span>(<span class="hljs-params">n: <span class="hljs-built_in">int</span></span>) -&gt; <span class="hljs-built_in">int</span>:</span>
     <span class="hljs-keyword">if</span> n &lt; <span class="hljs-number">2</span>:
         <span class="hljs-keyword">return</span> <span class="hljs-number">1</span>
-    <span class="hljs-keyword">return</span> n * factorial_float(n - <span class="hljs-number">1</span>)
+    <span class="hljs-keyword">return</span> n * factorial(n - <span class="hljs-number">1</span>)
+
+
+<span class="hljs-built_in">print</span>(<span class="hljs-string">f&quot;value is: <span class="hljs-subst">{factorial(<span class="hljs-number">4</span>)}</span>&quot;</span>)
 </span></span></foreignObject></svg></code></pre>
 <footer><img src="figures/logo/NGI/NGI_logo_transparent.gif" alt="width:90 height:40" style="width:90px;height:40px;" /></footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="26" data-paginate="true" data-header="_08.12.2022_" data-footer="![width:90 height:40](figures/logo/NGI/NGI_logo_transparent.gif)" data-theme="ngi-theme" data-marpit-pagination="26" data-marpit-pagination-total="28" style="--paginate:true;--header:_08.12.2022_;--footer:![width:90 height:40](figures/logo/NGI/NGI_logo_transparent.gif);--theme:ngi-theme;">
-<header><em>08.12.2022</em></header>
-<h4>Example with flake8</h4>
-<p>The following code can run correctly, but is not correctly formatted according to PEP8 because of the unnecesseary import of the unsed <code>math</code> library.</p>
-<pre><code class="language-python"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-comment"># this file is named factorial_float.py</span>
-<span class="hljs-keyword">import</span> math 
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="21" data-header="_09.12.2022_" data-footer="![width:90 height:40](figures/logo/NGI/NGI_logo_transparent.gif)" data-class="split-text-image" data-theme="ngi-theme" class="split-text-image" style="--header:_09.12.2022_;--footer:![width:90 height:40](figures/logo/NGI/NGI_logo_transparent.gif);--class:split-text-image;--theme:ngi-theme;">
+<header><em>09.12.2022</em></header>
 
-<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">factorial_float</span>(<span class="hljs-params">n: <span class="hljs-built_in">float</span></span>) -&gt; <span class="hljs-built_in">float</span>:</span>
-    <span class="hljs-keyword">if</span> n &lt; <span class="hljs-number">2</span>:
-        <span class="hljs-keyword">return</span> <span class="hljs-number">1</span>
-    <span class="hljs-keyword">return</span> n * factorial_float(n - <span class="hljs-number">1</span>)
-
-</span></span></foreignObject></svg></code></pre>
-<p>By running flake8 from the terminal</p>
-<pre><code class="language-powershell"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap>(<span class="hljs-built_in">type</span><span class="hljs-literal">-hint</span><span class="hljs-literal">-example</span><span class="hljs-literal">-py3</span>.<span class="hljs-number">10</span>) flake8 .\type_hint_example\factorial_float.py
-.\type_hint_example\factorial_float.py:<span class="hljs-number">1</span>:<span class="hljs-number">1</span>: F401 <span class="hljs-string">&#x27;math&#x27;</span> imported but unused
-.\type_hint_example\factorial_float.py:<span class="hljs-number">8</span>:<span class="hljs-number">1</span>: E741 ambiguous variable name <span class="hljs-string">&#x27;l&#x27;</span>
-</span></span></foreignObject></svg></code></pre>
-<p>The developer needs to manually remove this import.</p>
-<footer><img src="figures/logo/NGI/NGI_logo_transparent.gif" alt="width:90 height:40" style="width:90px;height:40px;" /></footer>
-</section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="27" data-paginate="true" data-header="_08.12.2022_" data-footer="![width:90 height:40](figures/logo/NGI/NGI_logo_transparent.gif)" data-theme="ngi-theme" data-marpit-pagination="27" data-marpit-pagination-total="28" style="--paginate:true;--header:_08.12.2022_;--footer:![width:90 height:40](figures/logo/NGI/NGI_logo_transparent.gif);--theme:ngi-theme;">
-<header><em>08.12.2022</em></header>
-<h1>Summary</h1>
-<p><img class="emoji" draggable="false" alt="💥" src="https://twemoji.maxcdn.com/2/svg/1f4a5.svg" data-marp-twemoji=""/> Pydantic let's you focus on your algorithm and not data model validation <img class="emoji" draggable="false" alt="💥" src="https://twemoji.maxcdn.com/2/svg/1f4a5.svg" data-marp-twemoji=""/></p>
-<h2>Other cool tools for model validation</h2>
+<h1><a href="https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks">Git-Hooks</a></h1>
+<div class=ldiv>
+<h2></h2>
+<h2></h2>
 <ul>
-<li><a href="https://pandera.readthedocs.io/en/stable/">Pandera</a>, for data-validation on dataframe-like objects<br />
-GitHub <img class="emoji" draggable="false" alt="⭐" src="https://twemoji.maxcdn.com/2/svg/2b50.svg" data-marp-twemoji=""/> 1.7k (currently, 18.10.22)</li>
+<li>Enforce standards
+<ul>
+<li><code>.pre-commit-config.yaml</code></li>
+</ul>
+</li>
+</ul>
+<h2></h2>
+<ul>
+<li>Action linked to a change
+<ul>
+<li>Pre-commit</li>
+</ul>
+</li>
+</ul>
+<h2></h2>
+<ul>
+<li>Local run</li>
+</ul>
+</div> 
+<div class=rdiv>
+<h2></h2>
+<p><img src="figures/illustrations/automate-all.png" alt="w:450 h:325" style="width:450px;height:325px;" /><br />
+<em>Credit: <a href="http://memegenerator.net/">http://memegenerator.net/</a></em></p>
+</div>
+<footer><img src="figures/logo/NGI/NGI_logo_transparent.gif" alt="width:90 height:40" style="width:90px;height:40px;" /></footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="22" data-header="_09.12.2022_" data-footer="![width:90 height:40](figures/logo/NGI/NGI_logo_transparent.gif)" data-theme="ngi-theme" style="--header:_09.12.2022_;--footer:![width:90 height:40](figures/logo/NGI/NGI_logo_transparent.gif);--theme:ngi-theme;">
+<header><em>09.12.2022</em></header>
+<h1>Pre-commit</h1>
+<pre><code class="language-powershell"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap>(pre<span class="hljs-literal">-commits</span><span class="hljs-literal">-python</span><span class="hljs-literal">-example</span><span class="hljs-literal">-py3</span>.<span class="hljs-number">11</span>):~/good<span class="hljs-literal">-scientific</span><span class="hljs-literal">-software</span><span class="hljs-literal">-for</span><span class="hljs-literal">-free</span><span class="hljs-literal">-python</span><span class="hljs-literal">-demo</span>(main)<span class="hljs-variable">$</span> <span class="hljs-built_in">ls</span> <span class="hljs-literal">-la</span> .git/hooks/
+... 
+<span class="hljs-literal">-rwxr</span><span class="hljs-literal">-xr</span><span class="hljs-literal">-x</span> <span class="hljs-number">1</span> sunnivin sunnivin <span class="hljs-number">1638</span> Dec  <span class="hljs-number">8</span> <span class="hljs-number">13</span>:<span class="hljs-number">47</span> pre<span class="hljs-literal">-commit</span>.sample
+... 
+</span></span></foreignObject></svg></code></pre>
+<pre><code class="language-powershell"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap>(pre<span class="hljs-literal">-commits</span><span class="hljs-literal">-python</span><span class="hljs-literal">-example</span><span class="hljs-literal">-py3</span>.<span class="hljs-number">11</span>):~/good<span class="hljs-literal">-scientific</span><span class="hljs-literal">-software</span><span class="hljs-literal">-for</span><span class="hljs-literal">-free</span><span class="hljs-literal">-python</span><span class="hljs-literal">-demo</span>(main)<span class="hljs-variable">$</span> poetry install 
+(pre<span class="hljs-literal">-commits</span><span class="hljs-literal">-python</span><span class="hljs-literal">-example</span><span class="hljs-literal">-py3</span>.<span class="hljs-number">11</span>):~/good<span class="hljs-literal">-scientific</span><span class="hljs-literal">-software</span><span class="hljs-literal">-for</span><span class="hljs-literal">-free</span><span class="hljs-literal">-python</span><span class="hljs-literal">-demo</span>(main)<span class="hljs-variable">$</span> pre<span class="hljs-literal">-commit</span> install
+pre<span class="hljs-literal">-commit</span> installed at .git/hooks/pre<span class="hljs-literal">-commit</span>
+</span></span></foreignObject></svg></code></pre>
+<pre><code class="language-powershell"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap>(pre<span class="hljs-literal">-commits</span><span class="hljs-literal">-python</span><span class="hljs-literal">-example</span><span class="hljs-literal">-py3</span>.<span class="hljs-number">11</span>):~/good<span class="hljs-literal">-scientific</span><span class="hljs-literal">-software</span><span class="hljs-literal">-for</span><span class="hljs-literal">-free</span><span class="hljs-literal">-python</span><span class="hljs-literal">-demo</span>(main)<span class="hljs-variable">$</span> <span class="hljs-built_in">ls</span> <span class="hljs-literal">-la</span> .git/hooks/
+...
+<span class="hljs-literal">-rwxr</span><span class="hljs-literal">-xr</span><span class="hljs-literal">-x</span> <span class="hljs-number">1</span> sunnivin sunnivin  <span class="hljs-number">678</span> Dec  <span class="hljs-number">8</span> <span class="hljs-number">13</span>:<span class="hljs-number">59</span> pre<span class="hljs-literal">-commit</span>
+<span class="hljs-literal">-rwxr</span><span class="hljs-literal">-xr</span><span class="hljs-literal">-x</span> <span class="hljs-number">1</span> sunnivin sunnivin <span class="hljs-number">1638</span> Dec  <span class="hljs-number">8</span> <span class="hljs-number">13</span>:<span class="hljs-number">47</span> pre<span class="hljs-literal">-commit</span>.sample
+...
+</span></span></foreignObject></svg></code></pre>
+<footer><img src="figures/logo/NGI/NGI_logo_transparent.gif" alt="width:90 height:40" style="width:90px;height:40px;" /></footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="23" data-header="_09.12.2022_" data-footer="![width:90 height:40](figures/logo/NGI/NGI_logo_transparent.gif)" data-theme="ngi-theme" style="--header:_09.12.2022_;--footer:![width:90 height:40](figures/logo/NGI/NGI_logo_transparent.gif);--theme:ngi-theme;">
+<header><em>09.12.2022</em></header>
+<h1>Pre-commit</h1>
+<pre><code class="language-powershell"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap>(pre<span class="hljs-literal">-commits</span><span class="hljs-literal">-python</span><span class="hljs-literal">-example</span><span class="hljs-literal">-py3</span>.<span class="hljs-number">11</span>):~/good<span class="hljs-literal">-scientific</span><span class="hljs-literal">-software</span><span class="hljs-literal">-for</span><span class="hljs-literal">-free</span><span class="hljs-literal">-python</span><span class="hljs-literal">-demo</span>(main)<span class="hljs-variable">$</span> git add . 
+(pre<span class="hljs-literal">-commits</span><span class="hljs-literal">-python</span><span class="hljs-literal">-example</span><span class="hljs-literal">-py3</span>.<span class="hljs-number">11</span>):~/good<span class="hljs-literal">-scientific</span><span class="hljs-literal">-software</span><span class="hljs-literal">-for</span><span class="hljs-literal">-free</span><span class="hljs-literal">-python</span><span class="hljs-literal">-demo</span>(main)<span class="hljs-variable">$</span> git commit <span class="hljs-literal">-m</span> <span class="hljs-string">&quot;doc: enforcing PEP8&quot;</span> 
+...
+Fixing factorial.py
+Mixed line ending........................................................Passed
+mypy.....................................................................Passed
+seed isort known_third_party.............................................Passed
+isort....................................................................Passed
+black....................................................................Failed
+- hook id: black
+- files were modified by this hook
+reformatted factorial.py
+All done! <img class="emoji" draggable="false" alt="✨" src="https://twemoji.maxcdn.com/2/svg/2728.svg" data-marp-twemoji=""/> <img class="emoji" draggable="false" alt="🍰" src="https://twemoji.maxcdn.com/2/svg/1f370.svg" data-marp-twemoji=""/> <img class="emoji" draggable="false" alt="✨" src="https://twemoji.maxcdn.com/2/svg/2728.svg" data-marp-twemoji=""/>
+<span class="hljs-number">1</span> file reformatted.
+pyupgrade................................................................Passed
+blacken<span class="hljs-literal">-docs</span>.............................................................Passed
+flake8...................................................................Failed
+- hook id: flake8
+- <span class="hljs-keyword">exit</span> code: <span class="hljs-number">1</span>
+factorial.py:<span class="hljs-number">1</span>:<span class="hljs-number">1</span>: F401 <span class="hljs-string">&#x27;math&#x27;</span> imported but unused
+factorial.py:<span class="hljs-number">2</span>:<span class="hljs-number">1</span>: F401 <span class="hljs-string">&#x27;pathlib.Path&#x27;</span> imported but unused
+factorial.py:<span class="hljs-number">4</span>:<span class="hljs-number">1</span>: E741 ambiguous variable name <span class="hljs-string">&#x27;l&#x27;</span>
+...
+</span></span></foreignObject></svg></code></pre>
+<footer><img src="figures/logo/NGI/NGI_logo_transparent.gif" alt="width:90 height:40" style="width:90px;height:40px;" /></footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="24" data-header="_09.12.2022_" data-footer="![width:90 height:40](figures/logo/NGI/NGI_logo_transparent.gif)" data-theme="ngi-theme" style="--header:_09.12.2022_;--footer:![width:90 height:40](figures/logo/NGI/NGI_logo_transparent.gif);--theme:ngi-theme;">
+<header><em>09.12.2022</em></header>
+<h1>Pre-commit</h1>
+<p>My code is updated</p>
+<pre><code class="language-python"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-comment"># this file is called factorial.py</span>
+l = <span class="hljs-number">42</span>
+
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">factorial</span>(<span class="hljs-params">n: <span class="hljs-built_in">int</span></span>) -&gt; <span class="hljs-built_in">int</span>:</span>
+    <span class="hljs-keyword">if</span> n &lt; <span class="hljs-number">2</span>:
+        <span class="hljs-keyword">return</span> <span class="hljs-number">1</span>
+    <span class="hljs-keyword">return</span> n * factorial(n - <span class="hljs-number">1</span>)
+
+
+<span class="hljs-built_in">print</span>(<span class="hljs-string">f&quot;value is: <span class="hljs-subst">{factorial(<span class="hljs-number">4</span>)}</span>&quot;</span>)
+</span></span></foreignObject></svg></code></pre>
+<footer><img src="figures/logo/NGI/NGI_logo_transparent.gif" alt="width:90 height:40" style="width:90px;height:40px;" /></footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="25" data-header="_09.12.2022_" data-footer="![width:90 height:40](figures/logo/NGI/NGI_logo_transparent.gif)" data-theme="ngi-theme" style="--header:_09.12.2022_;--footer:![width:90 height:40](figures/logo/NGI/NGI_logo_transparent.gif);--theme:ngi-theme;">
+<header><em>09.12.2022</em></header>
+<h1>Pre-commit with automatic formatting</h1>
+<p><a href="https://github.com/sunnivin/good-scientific-software-for-free-python-demo">Demo repository</a></p>
+<footer><img src="figures/logo/NGI/NGI_logo_transparent.gif" alt="width:90 height:40" style="width:90px;height:40px;" /></footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="26" data-header="_09.12.2022_" data-footer="![width:90 height:40](figures/logo/NGI/NGI_logo_transparent.gif)" data-theme="ngi-theme" style="--header:_09.12.2022_;--footer:![width:90 height:40](figures/logo/NGI/NGI_logo_transparent.gif);--theme:ngi-theme;">
+<header><em>09.12.2022</em></header>
+
+<h1><img class="emoji" draggable="false" alt="🙏" src="https://twemoji.maxcdn.com/2/svg/1f64f.svg" data-marp-twemoji=""/> Credit for this talk <img class="emoji" draggable="false" alt="🙏" src="https://twemoji.maxcdn.com/2/svg/1f64f.svg" data-marp-twemoji=""/></h1>
+<ul>
+<li><a href="http://cicero.xyz/v3/remark/0.14.0/github.com/coderefinery/modular-code-development/master/talk.md">Modular code development</a> by Radovan Bast</li>
+<li><a href="https://en.wikipedia.org/wiki/Factorial">Factorial</a></li>
+<li><a href="https://www.youtube.com/watch?v=esZLCuWs_2Y">Life is better painted black, or: How to Stop Worrying and Embrace Auto-Formatting</a>, Lukasz Langa, PyCon2019</li>
 </ul>
 <footer><img src="figures/logo/NGI/NGI_logo_transparent.gif" alt="width:90 height:40" style="width:90px;height:40px;" /></footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="28" data-paginate="true" data-header="_08.12.2022_" data-footer="![width:90 height:40](figures/logo/NGI/NGI_logo_transparent.gif)" data-theme="ngi-theme" data-marpit-pagination="28" data-marpit-pagination-total="28" style="--paginate:true;--header:_08.12.2022_;--footer:![width:90 height:40](figures/logo/NGI/NGI_logo_transparent.gif);--theme:ngi-theme;">
-<header><em>08.12.2022</em></header>
-<h1><a href="https://github.com/sunnivin/demo-make-model-validation-sexy-again">Demo repository</a></h1>
-<footer><img src="figures/logo/NGI/NGI_logo_transparent.gif" alt="width:90 height:40" style="width:90px;height:40px;" /></footer>
-</section>
 <script>!function(){"use strict";const t="marpitSVGPolyfill:setZoomFactor,",e=Symbol();let r,o;function n(n){const i="object"==typeof n&&n.target||document,a="object"==typeof n?n.zoom:n;window[e]||(Object.defineProperty(window,e,{configurable:!0,value:!0}),window.addEventListener("message",(({data:e,origin:r})=>{if(r===window.origin)try{if(e&&"string"==typeof e&&e.startsWith(t)){const[,t]=e.split(","),r=Number.parseFloat(t);Number.isNaN(r)||(o=r)}}catch(t){console.error(t)}})));let l=!1;Array.from(i.querySelectorAll("svg[data-marpit-svg]"),(t=>{var e,n,i,s;t.style.transform||(t.style.transform="translateZ(0)");const c=a||o||t.currentScale||1;r!==c&&(r=c,l=c);const d=t.getBoundingClientRect(),{length:u}=t.children;for(let r=0;r<u;r+=1){const o=t.children[r],a=o.getScreenCTM();if(a){const t=null!==(n=null===(e=o.x)||void 0===e?void 0:e.baseVal.value)&&void 0!==n?n:0,r=null!==(s=null===(i=o.y)||void 0===i?void 0:i.baseVal.value)&&void 0!==s?s:0,l=o.firstElementChild,{style:u}=l;u.transformOrigin||(u.transformOrigin=`${-t}px ${-r}px`),u.transform=`scale(${c}) matrix(${a.a}, ${a.b}, ${a.c}, ${a.d}, ${a.e-d.left}, ${a.f-d.top}) translateZ(0.0001px)`}}})),!1!==l&&Array.from(i.querySelectorAll("iframe"),(({contentWindow:e})=>{null==e||e.postMessage(`${t}${l}`,"null"===window.origin?"*":window.origin)}))}r=1,o=void 0;const i=(t,e,r)=>{if(t.getAttribute(e)!==r)return t.setAttribute(e,r),!0};function a({once:t=!1,target:e=document}={}){const r="Apple Computer, Inc."===navigator.vendor?[n]:[];let o=!t;const a=()=>{for(const t of r)t({target:e});!function(t=document){Array.from(t.querySelectorAll('svg[data-marp-fitting="svg"]'),(t=>{var e;const r=t.firstChild,o=r.firstChild,{scrollWidth:n,scrollHeight:a}=o;let l,s=1;if(t.hasAttribute("data-marp-fitting-code")&&(l=null===(e=t.parentElement)||void 0===e?void 0:e.parentElement),t.hasAttribute("data-marp-fitting-math")&&(l=t.parentElement),l){const t=getComputedStyle(l),e=Math.ceil(l.clientWidth-parseFloat(t.paddingLeft||"0")-parseFloat(t.paddingRight||"0"));e&&(s=e)}const c=Math.max(n,s),d=Math.max(a,1),u=`0 0 ${c} ${d}`;i(r,"width",`${c}`),i(r,"height",`${d}`),i(t,"preserveAspectRatio",getComputedStyle(t).getPropertyValue("--preserve-aspect-ratio")||"xMinYMin meet"),i(t,"viewBox",u)&&t.classList.toggle("__reflow__")}))}(e),o&&window.requestAnimationFrame(a)};return a(),()=>{o=!1}}const l=Symbol(),s=document.currentScript;((t=document)=>{if("undefined"==typeof window)throw new Error("Marp Core's browser script is valid only in browser context.");if(t[l])return t[l];const e=a({target:t}),r=()=>{e(),delete t[l]};Object.defineProperty(t,l,{configurable:!0,value:r})})(s?s.getRootNode():document)}();
-</script></foreignObject></svg></div><div class="bespoke-marp-note" data-index="14" tabindex="0"><p>| ![zen](../figures/the-zen-of-python.png) |
-|:--:|
-| Figure: A cartoon guide *Credit: FILL INN AUTHOR*|</p><p>If you choose to break one of these rules you should have a good reason for it. There exist a lot of tools that can help you to follow the standards efficiently.</p></div><script>/*!! License: https://unpkg.com/@marp-team/marp-cli@1.4.1/lib/bespoke.js.LICENSE.txt */
-!function(){"use strict";const e=document.body,t=(...e)=>history.replaceState(...e),n="presenter",r="next",o=["",n,r],a="data-bespoke-marp-",i=(e,{protocol:t,host:n,pathname:r,hash:o}=location)=>{const a=e.toString();return`${t}//${n}${r}${a?"?":""}${a}${o}`},s=()=>e.dataset.bespokeView,l=e=>new URLSearchParams(location.search).get(e),c=(e,n={})=>{var r;const o={location,setter:t,...n},a=new URLSearchParams(o.location.search);for(const t of Object.keys(e)){const n=e[t];"string"==typeof n?a.set(t,n):a.delete(t)}try{o.setter({...null!==(r=window.history.state)&&void 0!==r?r:{}},"",i(a,o.location))}catch(e){console.error(e)}},d=(()=>{const e="bespoke-marp";try{return localStorage.setItem(e,e),localStorage.removeItem(e),!0}catch(e){return!1}})(),f=e=>{try{return localStorage.getItem(e)}catch(e){return null}},u=(e,t)=>{try{return localStorage.setItem(e,t),!0}catch(e){return!1}},m=e=>{try{return localStorage.removeItem(e),!0}catch(e){return!1}},g=(e,t)=>{const n="aria-hidden";t?e.setAttribute(n,"true"):e.removeAttribute(n)},p=e=>{e.parent.classList.add("bespoke-marp-parent"),e.slides.forEach((e=>e.classList.add("bespoke-marp-slide"))),e.on("activate",(t=>{const n="bespoke-marp-active",r=t.slide,o=r.classList,a=!o.contains(n);if(e.slides.forEach((e=>{e.classList.remove(n),g(e,!0)})),o.add(n),g(r,!1),a){const e=`${n}-ready`;o.add(e),document.body.clientHeight,o.remove(e)}}))},v=e=>{let t=0,n=0;Object.defineProperty(e,"fragments",{enumerable:!0,value:e.slides.map((e=>[null,...e.querySelectorAll("[data-marpit-fragment]")]))});const r=r=>void 0!==e.fragments[t][n+r],o=(r,o)=>{t=r,n=o,e.fragments.forEach(((e,t)=>{e.forEach(((e,n)=>{if(null==e)return;const i=t<r||t===r&&n<=o;e.setAttribute(`${a}fragment`,(i?"":"in")+"active");const s=`${a}current-fragment`;t===r&&n===o?e.setAttribute(s,"current"):e.removeAttribute(s)}))})),e.fragmentIndex=o;const i={slide:e.slides[r],index:r,fragments:e.fragments[r],fragmentIndex:o};e.fire("fragment",i)};e.on("next",(({fragment:a=!0})=>{if(a){if(r(1))return o(t,n+1),!1;const a=t+1;e.fragments[a]&&o(a,0)}else{const r=e.fragments[t].length;if(n+1<r)return o(t,r-1),!1;const a=e.fragments[t+1];a&&o(t+1,a.length-1)}})),e.on("prev",(({fragment:a=!0})=>{if(r(-1)&&a)return o(t,n-1),!1;const i=t-1;e.fragments[i]&&o(i,e.fragments[i].length-1)})),e.on("slide",(({index:t,fragment:n})=>{let r=0;if(void 0!==n){const o=e.fragments[t];if(o){const{length:e}=o;r=-1===n?e-1:Math.min(Math.max(n,0),e-1)}}o(t,r)})),o(0,0)},h=document,y=()=>!(!h.fullscreenEnabled&&!h.webkitFullscreenEnabled),x=()=>!(!h.fullscreenElement&&!h.webkitFullscreenElement),w=e=>{e.fullscreen=()=>{y()&&(async()=>{return x()?null===(e=h.exitFullscreen||h.webkitExitFullscreen)||void 0===e?void 0:e.call(h):((e=h.body)=>{var t;return null===(t=e.requestFullscreen||e.webkitRequestFullscreen)||void 0===t?void 0:t.call(e)})();var e})()},document.addEventListener("keydown",(t=>{"f"!==t.key&&"F11"!==t.key||t.altKey||t.ctrlKey||t.metaKey||!y()||(e.fullscreen(),t.preventDefault())}))},b="bespoke-marp-inactive",k=(e=2e3)=>({parent:t,fire:n})=>{const r=t.classList,o=e=>n(`marp-${e?"":"in"}active`);let a;const i=()=>{a&&clearTimeout(a),a=setTimeout((()=>{r.add(b),o()}),e),r.contains(b)&&(r.remove(b),o(!0))};for(const e of["mousedown","mousemove","touchend"])document.addEventListener(e,i);setTimeout(i,0)},E=["AUDIO","BUTTON","INPUT","SELECT","TEXTAREA","VIDEO"],L=e=>{e.parent.addEventListener("keydown",(e=>{if(!e.target)return;const t=e.target;(E.includes(t.nodeName)||"true"===t.contentEditable)&&e.stopPropagation()}))},$=e=>{window.addEventListener("load",(()=>{for(const t of e.slides){const e=t.querySelector("[data-marp-fitting]")?"":"hideable";t.setAttribute(`${a}load`,e)}}))},P=({interval:e=250}={})=>t=>{document.addEventListener("keydown",(e=>{if(" "===e.key&&e.shiftKey)t.prev();else if("ArrowLeft"===e.key||"ArrowUp"===e.key||"PageUp"===e.key)t.prev({fragment:!e.shiftKey});else if(" "!==e.key||e.shiftKey)if("ArrowRight"===e.key||"ArrowDown"===e.key||"PageDown"===e.key)t.next({fragment:!e.shiftKey});else if("End"===e.key)t.slide(t.slides.length-1,{fragment:-1});else{if("Home"!==e.key)return;t.slide(0)}else t.next();e.preventDefault()}));let n,r,o=0;t.parent.addEventListener("wheel",(a=>{let i=!1;const s=(e,t)=>{e&&(i=i||((e,t)=>((e,t)=>{const n="X"===t?"Width":"Height";return e[`client${n}`]<e[`scroll${n}`]})(e,t)&&((e,t)=>{const{overflow:n}=e,r=e[`overflow${t}`];return"auto"===n||"scroll"===n||"auto"===r||"scroll"===r})(getComputedStyle(e),t))(e,t)),(null==e?void 0:e.parentElement)&&s(e.parentElement,t)};if(0!==a.deltaX&&s(a.target,"X"),0!==a.deltaY&&s(a.target,"Y"),i)return;a.preventDefault();const l=Math.sqrt(a.deltaX**2+a.deltaY**2);if(void 0!==a.wheelDelta){if(void 0===a.webkitForce&&Math.abs(a.wheelDelta)<40)return;if(a.deltaMode===a.DOM_DELTA_PIXEL&&l<4)return}else if(a.deltaMode===a.DOM_DELTA_PIXEL&&l<12)return;r&&clearTimeout(r),r=setTimeout((()=>{n=0}),e);const c=Date.now()-o<e,d=l<=n;if(n=l,c||d)return;let f;(a.deltaX>0||a.deltaY>0)&&(f="next"),(a.deltaX<0||a.deltaY<0)&&(f="prev"),f&&(t[f](),o=Date.now())}))},S=(e=".bespoke-marp-osc")=>{const t=document.querySelector(e);if(!t)return()=>{};const n=(e,n)=>{t.querySelectorAll(`[${a}osc=${JSON.stringify(e)}]`).forEach(n)};return y()||n("fullscreen",(e=>e.style.display="none")),d||n("presenter",(e=>{e.disabled=!0,e.title="Presenter view is disabled due to restricted localStorage."})),e=>{t.addEventListener("click",(t=>{if(t.target instanceof HTMLElement){const{bespokeMarpOsc:n}=t.target.dataset;n&&t.target.blur();const r={fragment:!t.shiftKey};"next"===n?e.next(r):"prev"===n?e.prev(r):"fullscreen"===n?null==e||e.fullscreen():"presenter"===n&&e.openPresenterView()}})),e.parent.appendChild(t),e.on("activate",(({index:t})=>{n("page",(n=>n.textContent=`Page ${t+1} of ${e.slides.length}`))})),e.on("fragment",(({index:t,fragments:r,fragmentIndex:o})=>{n("prev",(e=>e.disabled=0===t&&0===o)),n("next",(n=>n.disabled=t===e.slides.length-1&&o===r.length-1))})),e.on("marp-active",(()=>g(t,!1))),e.on("marp-inactive",(()=>g(t,!0))),y()&&(e=>{for(const t of["","webkit"])h.addEventListener(t+"fullscreenchange",e)})((()=>n("fullscreen",(e=>e.classList.toggle("exit",y()&&x())))))}},I=e=>{window.addEventListener("message",(t=>{if(t.origin!==window.origin)return;const[n,r]=t.data.split(":");if("navigate"===n){const[t,n]=r.split(",");let o=Number.parseInt(t,10),a=Number.parseInt(n,10)+1;a>=e.fragments[o].length&&(o+=1,a=0),e.slide(o,{fragment:a})}}))};var T=["area","base","br","col","command","embed","hr","img","input","keygen","link","meta","param","source","track","wbr"];let A=e=>String(e).replace(/[&<>"']/g,(e=>`&${C[e]};`)),C={"&":"amp","<":"lt",">":"gt",'"':"quot","'":"apos"},N="dangerouslySetInnerHTML",K={className:"class",htmlFor:"for"},O={};function D(e,t){let n=[],r="";t=t||{};for(let e=arguments.length;e-- >2;)n.push(arguments[e]);if("function"==typeof e)return t.children=n.reverse(),e(t);if(e){if(r+="<"+e,t)for(let e in t)!1!==t[e]&&null!=t[e]&&e!==N&&(r+=` ${K[e]?K[e]:A(e)}="${A(t[e])}"`);r+=">"}if(-1===T.indexOf(e)){if(t[N])r+=t[N].__html;else for(;n.length;){let e=n.pop();if(e)if(e.pop)for(let t=e.length;t--;)n.push(e[t]);else r+=!0===O[e]?e:A(e)}r+=e?`</${e}>`:""}return O[r]=!0,r}const M=({children:e})=>D(null,null,...e),q="bespoke-marp-presenter-",_={container:`${q}container`,next:`${q}next`,nextContainer:`${q}next-container`,noteContainer:`${q}note-container`,infoContainer:`${q}info-container`,infoPage:`${q}info-page`,infoPageText:`${q}info-page-text`,infoPagePrev:`${q}info-page-prev`,infoPageNext:`${q}info-page-next`,infoTime:`${q}info-time`,infoTimer:`${q}info-timer`},U=e=>{const{title:t}=document;document.title="[Presenter view]"+(t?` - ${t}`:"");const n={},r=e=>(n[e]=n[e]||document.querySelector(`.${e}`),n[e]);document.body.appendChild((e=>{const t=document.createElement("div");return t.className=_.container,t.appendChild(e),t.insertAdjacentHTML("beforeend",D(M,null,D("div",{class:_.nextContainer},D("iframe",{class:_.next,src:"?view=next"})),D("div",{class:_.noteContainer}),D("div",{class:_.infoContainer},D("div",{class:_.infoPage},D("button",{class:_.infoPagePrev,tabindex:"-1",title:"Previous"},"Previous"),D("span",{class:_.infoPageText}),D("button",{class:_.infoPageNext,tabindex:"-1",title:"Next"},"Next")),D("time",{class:_.infoTime,title:"Current time"}),D("div",{class:_.infoTimer})))),t})(e.parent)),(e=>{r(_.nextContainer).addEventListener("click",(()=>e.next()));const t=r(_.next),n=(o=t,(e,t)=>{var n;return null===(n=o.contentWindow)||void 0===n?void 0:n.postMessage(`navigate:${e},${t}`,"null"===window.origin?"*":window.origin)});var o;t.addEventListener("load",(()=>{r(_.nextContainer).classList.add("active"),n(e.slide(),e.fragmentIndex),e.on("fragment",(({index:e,fragmentIndex:t})=>n(e,t)))}));const a=document.querySelectorAll(".bespoke-marp-note");a.forEach((e=>{e.addEventListener("keydown",(e=>e.stopPropagation())),r(_.noteContainer).appendChild(e)})),e.on("activate",(()=>a.forEach((t=>t.classList.toggle("active",t.dataset.index==e.slide()))))),e.on("activate",(({index:t})=>{r(_.infoPageText).textContent=`${t+1} / ${e.slides.length}`}));const i=r(_.infoPagePrev),s=r(_.infoPageNext);i.addEventListener("click",(t=>{i.blur(),e.prev({fragment:!t.shiftKey})})),s.addEventListener("click",(t=>{s.blur(),e.next({fragment:!t.shiftKey})})),e.on("fragment",(({index:t,fragments:n,fragmentIndex:r})=>{i.disabled=0===t&&0===r,s.disabled=t===e.slides.length-1&&r===n.length-1}));const l=()=>r(_.infoTime).textContent=(new Date).toLocaleTimeString();l(),setInterval(l,250)})(e)},V=e=>{if(!(e=>e.syncKey&&"string"==typeof e.syncKey)(e))throw new Error("The current instance of Bespoke.js is invalid for Marp bespoke presenter plugin.");Object.defineProperties(e,{openPresenterView:{enumerable:!0,value:X},presenterUrl:{enumerable:!0,get:F}}),d&&document.addEventListener("keydown",(t=>{"p"!==t.key||t.altKey||t.ctrlKey||t.metaKey||(t.preventDefault(),e.openPresenterView())}))};function X(){const{max:e,floor:t}=Math,n=e(t(.85*window.innerWidth),640),r=e(t(.85*window.innerHeight),360);return window.open(this.presenterUrl,q+this.syncKey,`width=${n},height=${r},menubar=no,toolbar=no`)}function F(){const e=new URLSearchParams(location.search);return e.set("view","presenter"),e.set("sync",this.syncKey),i(e)}const B=e=>{const t=s();return t===r&&e.appendChild(document.createElement("span")),{"":V,[n]:U,[r]:I}[t]},R=e=>{e.on("activate",(t=>{document.querySelectorAll(".bespoke-progress-parent > .bespoke-progress-bar").forEach((n=>{n.style.flexBasis=100*t.index/(e.slides.length-1)+"%"}))}))},j=e=>{const t=Number.parseInt(e,10);return Number.isNaN(t)?null:t},H=(e={})=>{const t={history:!0,...e};return e=>{let n=!0;const r=e=>{const t=n;try{return n=!0,e()}finally{n=t}},o=(t={fragment:!0})=>{((t,n)=>{const{min:r,max:o}=Math,{fragments:a,slides:i}=e,s=o(0,r(t,i.length-1)),l=o(0,r(n||0,a[s].length-1));s===e.slide()&&l===e.fragmentIndex||e.slide(s,{fragment:l})})((j(location.hash.slice(1))||1)-1,t.fragment?j(l("f")||""):null)};e.on("fragment",(({index:e,fragmentIndex:r})=>{n||c({f:0===r||r.toString()},{location:{...location,hash:`#${e+1}`},setter:(...e)=>t.history?history.pushState(...e):history.replaceState(...e)})})),setTimeout((()=>{o(),window.addEventListener("hashchange",(()=>r((()=>{o({fragment:!1}),c({f:void 0})})))),window.addEventListener("popstate",(()=>{n||r((()=>o()))})),n=!1}),0)}},Y=(e={})=>{var n;const r=e.key||(null===(n=window.history.state)||void 0===n?void 0:n.marpBespokeSyncKey)||Math.random().toString(36).slice(2),o=`bespoke-marp-sync-${r}`;var a;a={marpBespokeSyncKey:r},c({},{setter:(e,...n)=>t({...e,...a},...n)});const i=()=>{const e=f(o);return e?JSON.parse(e):Object.create(null)},s=e=>{const t=i(),n={...t,...e(t)};return u(o,JSON.stringify(n)),n},l=()=>{window.removeEventListener("pageshow",l),s((e=>({reference:(e.reference||0)+1})))};return e=>{l(),Object.defineProperty(e,"syncKey",{value:r,enumerable:!0});let t=!0;setTimeout((()=>{e.on("fragment",(e=>{t&&s((()=>({index:e.index,fragmentIndex:e.fragmentIndex})))}))}),0),window.addEventListener("storage",(n=>{if(n.key===o&&n.oldValue&&n.newValue){const r=JSON.parse(n.oldValue),o=JSON.parse(n.newValue);if(r.index!==o.index||r.fragmentIndex!==o.fragmentIndex)try{t=!1,e.slide(o.index,{fragment:o.fragmentIndex})}finally{t=!0}}}));const n=()=>{const{reference:e}=i();void 0===e||e<=1?m(o):s((()=>({reference:e-1})))};window.addEventListener("pagehide",(e=>{e.persisted&&window.addEventListener("pageshow",l),n()})),e.on("destroy",n)}},{PI:J,abs:W,sqrt:z,atan2:G}=Math,Q={passive:!0},Z=({slope:e=-.7,swipeThreshold:t=30}={})=>n=>{let r;const o=n.parent,a=e=>{const t=o.getBoundingClientRect();return{x:e.pageX-(t.left+t.right)/2,y:e.pageY-(t.top+t.bottom)/2}};o.addEventListener("touchstart",(({touches:e})=>{r=1===e.length?a(e[0]):void 0}),Q),o.addEventListener("touchmove",(e=>{if(r)if(1===e.touches.length){e.preventDefault();const t=a(e.touches[0]),n=t.x-r.x,o=t.y-r.y;r.delta=z(W(n)**2+W(o)**2),r.radian=G(n,o)}else r=void 0})),o.addEventListener("touchend",(o=>{if(r){if(r.delta&&r.delta>=t&&r.radian){const t=(r.radian-e+J)%(2*J)-J;n[t<0?"next":"prev"](),o.stopPropagation()}r=void 0}}),Q)},ee="_tA",te=e=>{const t=document.documentTransition;if(!t)return;let n;e._tP=!1;const r=(n,{back:r,cond:o})=>a=>{const i=e.slides[e.slide()].querySelector("section[data-transition]");if(!i)return!0;const s=document.querySelector(".bespoke-marp-osc"),l=s?[s]:void 0;if(e._tP){if(a._tA){e._tP=!1;try{t.start({sharedElements:l}).catch((()=>{}))}catch(e){}return!0}}else{if(!o(a))return!0;e._tP=t.prepare({rootTransition:a.back||r?i.dataset.transitionBack:i.dataset.transition,sharedElements:l}).then((()=>n(a))).catch((()=>n(a)))}return!1};e.on("prev",r((t=>e.prev({...t,[ee]:!0})),{back:!0,cond:e=>{var t;return e.index>0&&!((null===(t=e.fragment)||void 0===t||t)&&n.fragmentIndex>0)}})),e.on("next",r((t=>e.next({...t,[ee]:!0})),{cond:t=>t.index+1<e.slides.length&&!(n.fragmentIndex+1<n.fragments.length)})),setTimeout((()=>{e.on("slide",r((t=>e.slide(t.index,{...t,[ee]:!0})),{cond:t=>{const n=e.slide();return t.index!==n&&(t.back=t.index<n,!0)}}))}),0),e.on("fragment",(e=>{n=e}))};let ne;const re=()=>(void 0===ne&&(ne="wakeLock"in navigator&&navigator.wakeLock),ne),oe=async()=>{const e=re();if(e)try{return await e.request("screen")}catch(e){console.warn(e)}return null},ae=async()=>{if(!re())return;let e;const t=()=>{e&&"visible"===document.visibilityState&&oe()};for(const e of["visibilitychange","fullscreenchange"])document.addEventListener(e,t);return e=await oe(),e};((t=document.getElementById("p"))=>{(()=>{const t=l("view");e.dataset.bespokeView=t===r||t===n?t:""})();const a=(e=>{const t=l(e);return c({[e]:void 0}),t})("sync")||void 0;var i,d,f,u,m,g,h,y,x,b,E,I;i=t,d=((...e)=>{const t=o.findIndex((e=>s()===e));return e.map((([e,n])=>e[t]&&n)).filter((e=>e))})([[1,1,0],Y({key:a})],[[1,1,1],B(t)],[[1,1,0],L],[[1,1,1],p],[[1,0,0],k()],[[1,1,1],$],[[1,1,1],H({history:!1})],[[1,1,0],P()],[[1,1,0],w],[[1,0,0],R],[[1,1,0],Z()],[[1,0,0],S()],[[1,0,0],te],[[1,1,1],v],[[1,1,0],ae]),u=1===(i.parent||i).nodeType?i.parent||i:document.querySelector(i.parent||i),m=[].filter.call("string"==typeof i.slides?u.querySelectorAll(i.slides):i.slides||u.children,(function(e){return"SCRIPT"!==e.nodeName})),g={},h=function(e,t){return(t=t||{}).index=m.indexOf(e),t.slide=e,t},b=function(e,t){m[e]&&(f&&x("deactivate",h(f,t)),f=m[e],x("activate",h(f,t)))},E=function(e,t){var n=m.indexOf(f)+e;x(e>0?"next":"prev",h(f,t))&&b(n,t)},I={off:y=function(e,t){g[e]=(g[e]||[]).filter((function(e){return e!==t}))},on:function(e,t){return(g[e]||(g[e]=[])).push(t),y.bind(null,e,t)},fire:x=function(e,t){return(g[e]||[]).reduce((function(e,n){return e&&!1!==n(t)}),!0)},slide:function(e,t){if(!arguments.length)return m.indexOf(f);x("slide",h(m[e],t))&&b(e,t)},next:E.bind(null,1),prev:E.bind(null,-1),parent:u,slides:m,destroy:function(e){x("destroy",h(f,e)),g={}}},(d||[]).forEach((function(e){e(I)})),f||b(0)})()}();</script><script>window.__marpCliWatchWS="ws://localhost:37717/6fbe93f33becc8bf735b52a6813c43142e96fd95253e81f8ba03ba5234873ef8";!function(){"use strict";const e=(n,o=!1)=>{const t=new WebSocket(n);return t.addEventListener("open",(()=>{console.info("[Marp CLI] Observing the change of file..."),o&&location.reload()})),t.addEventListener("close",(()=>{console.warn("[Marp CLI] WebSocket for file watcher was disconnected. Try re-connecting in 5000ms..."),setTimeout((()=>e(n,!0)),5e3)})),t.addEventListener("message",(e=>{"reload"===e.data&&location.reload()})),t};(()=>{const n=window.__marpCliWatchWS;n&&e(n)})()}();</script></body></html>
+</script></foreignObject></svg></div><div class="bespoke-marp-note" data-index="0" tabindex="0"><p>Write some invisible text</p><p>## &lt;span style=&quot;color:#F5F5F5&quot;&gt;What is a good *enough* code model?&lt;/span&gt;</p></div><div class="bespoke-marp-note" data-index="2" tabindex="0"><p>&lt;!-- paginate: true</p><p>_footer: &quot;![width:90 height:40](figures/logo/NGI/NGI_logo_transparent.gif)  *Figure credit: [Ali Bati](http://www.alibati.com/horse)* &quot; 
+
+# What is a good *enough* scientific model?
+
+
+- Use something simplified to learn about the real world 
+
+
+ 
+![bg right w:400 h:350](figures/illustrations/horse.png) 
+ ---</p><p># What is a good *enough* code?
+
+
+- Use something simplified **to write a simplified code** to learn something about the real world 
+
+
+ 
+![bg right w:400 h:350](figures/illustrations/horse.png) 
+
+
+
+
+
+---</p></div><div class="bespoke-marp-note" data-index="6" tabindex="0"><p>## &quot;free&quot; quality code 
+
+- Use type hints 
+- (Try) to follow the Python Enhancement Proposals (PEPs)</p></div><div class="bespoke-marp-note" data-index="8" tabindex="0"><p>![w:400 h:425](figures/illustrations/dependency.png) 
+*Image credit: [xkcd](https://xkcd.com/2347/)*</p></div><div class="bespoke-marp-note" data-index="25" tabindex="0"><p>&lt;!-- _class: split-text-image</p><p># The *zen* of scientific programming 
+
+&lt;div class=ldiv&gt;
+
+##
+
+
+## 
+
+##
+
+
+- Find the right tool for the right job
+
+
+
+&lt;/div&gt; 
+
+
+&lt;div class=rdiv&gt;
+
+## 
+
+![w:450 h:325](figures/illustrations/development_speed_quick_hacks.png) 
+*Credit: Radovan Bast*
+
+
+&lt;/div&gt;</p></div><script>/*!! License: https://unpkg.com/@marp-team/marp-cli@1.4.1/lib/bespoke.js.LICENSE.txt */
+!function(){"use strict";const e=document.body,t=(...e)=>history.replaceState(...e),n="presenter",r="next",o=["",n,r],a="data-bespoke-marp-",i=(e,{protocol:t,host:n,pathname:r,hash:o}=location)=>{const a=e.toString();return`${t}//${n}${r}${a?"?":""}${a}${o}`},s=()=>e.dataset.bespokeView,l=e=>new URLSearchParams(location.search).get(e),c=(e,n={})=>{var r;const o={location,setter:t,...n},a=new URLSearchParams(o.location.search);for(const t of Object.keys(e)){const n=e[t];"string"==typeof n?a.set(t,n):a.delete(t)}try{o.setter({...null!==(r=window.history.state)&&void 0!==r?r:{}},"",i(a,o.location))}catch(e){console.error(e)}},d=(()=>{const e="bespoke-marp";try{return localStorage.setItem(e,e),localStorage.removeItem(e),!0}catch(e){return!1}})(),f=e=>{try{return localStorage.getItem(e)}catch(e){return null}},u=(e,t)=>{try{return localStorage.setItem(e,t),!0}catch(e){return!1}},m=e=>{try{return localStorage.removeItem(e),!0}catch(e){return!1}},g=(e,t)=>{const n="aria-hidden";t?e.setAttribute(n,"true"):e.removeAttribute(n)},p=e=>{e.parent.classList.add("bespoke-marp-parent"),e.slides.forEach((e=>e.classList.add("bespoke-marp-slide"))),e.on("activate",(t=>{const n="bespoke-marp-active",r=t.slide,o=r.classList,a=!o.contains(n);if(e.slides.forEach((e=>{e.classList.remove(n),g(e,!0)})),o.add(n),g(r,!1),a){const e=`${n}-ready`;o.add(e),document.body.clientHeight,o.remove(e)}}))},v=e=>{let t=0,n=0;Object.defineProperty(e,"fragments",{enumerable:!0,value:e.slides.map((e=>[null,...e.querySelectorAll("[data-marpit-fragment]")]))});const r=r=>void 0!==e.fragments[t][n+r],o=(r,o)=>{t=r,n=o,e.fragments.forEach(((e,t)=>{e.forEach(((e,n)=>{if(null==e)return;const i=t<r||t===r&&n<=o;e.setAttribute(`${a}fragment`,(i?"":"in")+"active");const s=`${a}current-fragment`;t===r&&n===o?e.setAttribute(s,"current"):e.removeAttribute(s)}))})),e.fragmentIndex=o;const i={slide:e.slides[r],index:r,fragments:e.fragments[r],fragmentIndex:o};e.fire("fragment",i)};e.on("next",(({fragment:a=!0})=>{if(a){if(r(1))return o(t,n+1),!1;const a=t+1;e.fragments[a]&&o(a,0)}else{const r=e.fragments[t].length;if(n+1<r)return o(t,r-1),!1;const a=e.fragments[t+1];a&&o(t+1,a.length-1)}})),e.on("prev",(({fragment:a=!0})=>{if(r(-1)&&a)return o(t,n-1),!1;const i=t-1;e.fragments[i]&&o(i,e.fragments[i].length-1)})),e.on("slide",(({index:t,fragment:n})=>{let r=0;if(void 0!==n){const o=e.fragments[t];if(o){const{length:e}=o;r=-1===n?e-1:Math.min(Math.max(n,0),e-1)}}o(t,r)})),o(0,0)},h=document,y=()=>!(!h.fullscreenEnabled&&!h.webkitFullscreenEnabled),x=()=>!(!h.fullscreenElement&&!h.webkitFullscreenElement),w=e=>{e.fullscreen=()=>{y()&&(async()=>{return x()?null===(e=h.exitFullscreen||h.webkitExitFullscreen)||void 0===e?void 0:e.call(h):((e=h.body)=>{var t;return null===(t=e.requestFullscreen||e.webkitRequestFullscreen)||void 0===t?void 0:t.call(e)})();var e})()},document.addEventListener("keydown",(t=>{"f"!==t.key&&"F11"!==t.key||t.altKey||t.ctrlKey||t.metaKey||!y()||(e.fullscreen(),t.preventDefault())}))},b="bespoke-marp-inactive",k=(e=2e3)=>({parent:t,fire:n})=>{const r=t.classList,o=e=>n(`marp-${e?"":"in"}active`);let a;const i=()=>{a&&clearTimeout(a),a=setTimeout((()=>{r.add(b),o()}),e),r.contains(b)&&(r.remove(b),o(!0))};for(const e of["mousedown","mousemove","touchend"])document.addEventListener(e,i);setTimeout(i,0)},E=["AUDIO","BUTTON","INPUT","SELECT","TEXTAREA","VIDEO"],L=e=>{e.parent.addEventListener("keydown",(e=>{if(!e.target)return;const t=e.target;(E.includes(t.nodeName)||"true"===t.contentEditable)&&e.stopPropagation()}))},$=e=>{window.addEventListener("load",(()=>{for(const t of e.slides){const e=t.querySelector("[data-marp-fitting]")?"":"hideable";t.setAttribute(`${a}load`,e)}}))},P=({interval:e=250}={})=>t=>{document.addEventListener("keydown",(e=>{if(" "===e.key&&e.shiftKey)t.prev();else if("ArrowLeft"===e.key||"ArrowUp"===e.key||"PageUp"===e.key)t.prev({fragment:!e.shiftKey});else if(" "!==e.key||e.shiftKey)if("ArrowRight"===e.key||"ArrowDown"===e.key||"PageDown"===e.key)t.next({fragment:!e.shiftKey});else if("End"===e.key)t.slide(t.slides.length-1,{fragment:-1});else{if("Home"!==e.key)return;t.slide(0)}else t.next();e.preventDefault()}));let n,r,o=0;t.parent.addEventListener("wheel",(a=>{let i=!1;const s=(e,t)=>{e&&(i=i||((e,t)=>((e,t)=>{const n="X"===t?"Width":"Height";return e[`client${n}`]<e[`scroll${n}`]})(e,t)&&((e,t)=>{const{overflow:n}=e,r=e[`overflow${t}`];return"auto"===n||"scroll"===n||"auto"===r||"scroll"===r})(getComputedStyle(e),t))(e,t)),(null==e?void 0:e.parentElement)&&s(e.parentElement,t)};if(0!==a.deltaX&&s(a.target,"X"),0!==a.deltaY&&s(a.target,"Y"),i)return;a.preventDefault();const l=Math.sqrt(a.deltaX**2+a.deltaY**2);if(void 0!==a.wheelDelta){if(void 0===a.webkitForce&&Math.abs(a.wheelDelta)<40)return;if(a.deltaMode===a.DOM_DELTA_PIXEL&&l<4)return}else if(a.deltaMode===a.DOM_DELTA_PIXEL&&l<12)return;r&&clearTimeout(r),r=setTimeout((()=>{n=0}),e);const c=Date.now()-o<e,d=l<=n;if(n=l,c||d)return;let f;(a.deltaX>0||a.deltaY>0)&&(f="next"),(a.deltaX<0||a.deltaY<0)&&(f="prev"),f&&(t[f](),o=Date.now())}))},S=(e=".bespoke-marp-osc")=>{const t=document.querySelector(e);if(!t)return()=>{};const n=(e,n)=>{t.querySelectorAll(`[${a}osc=${JSON.stringify(e)}]`).forEach(n)};return y()||n("fullscreen",(e=>e.style.display="none")),d||n("presenter",(e=>{e.disabled=!0,e.title="Presenter view is disabled due to restricted localStorage."})),e=>{t.addEventListener("click",(t=>{if(t.target instanceof HTMLElement){const{bespokeMarpOsc:n}=t.target.dataset;n&&t.target.blur();const r={fragment:!t.shiftKey};"next"===n?e.next(r):"prev"===n?e.prev(r):"fullscreen"===n?null==e||e.fullscreen():"presenter"===n&&e.openPresenterView()}})),e.parent.appendChild(t),e.on("activate",(({index:t})=>{n("page",(n=>n.textContent=`Page ${t+1} of ${e.slides.length}`))})),e.on("fragment",(({index:t,fragments:r,fragmentIndex:o})=>{n("prev",(e=>e.disabled=0===t&&0===o)),n("next",(n=>n.disabled=t===e.slides.length-1&&o===r.length-1))})),e.on("marp-active",(()=>g(t,!1))),e.on("marp-inactive",(()=>g(t,!0))),y()&&(e=>{for(const t of["","webkit"])h.addEventListener(t+"fullscreenchange",e)})((()=>n("fullscreen",(e=>e.classList.toggle("exit",y()&&x())))))}},I=e=>{window.addEventListener("message",(t=>{if(t.origin!==window.origin)return;const[n,r]=t.data.split(":");if("navigate"===n){const[t,n]=r.split(",");let o=Number.parseInt(t,10),a=Number.parseInt(n,10)+1;a>=e.fragments[o].length&&(o+=1,a=0),e.slide(o,{fragment:a})}}))};var T=["area","base","br","col","command","embed","hr","img","input","keygen","link","meta","param","source","track","wbr"];let A=e=>String(e).replace(/[&<>"']/g,(e=>`&${C[e]};`)),C={"&":"amp","<":"lt",">":"gt",'"':"quot","'":"apos"},N="dangerouslySetInnerHTML",K={className:"class",htmlFor:"for"},O={};function D(e,t){let n=[],r="";t=t||{};for(let e=arguments.length;e-- >2;)n.push(arguments[e]);if("function"==typeof e)return t.children=n.reverse(),e(t);if(e){if(r+="<"+e,t)for(let e in t)!1!==t[e]&&null!=t[e]&&e!==N&&(r+=` ${K[e]?K[e]:A(e)}="${A(t[e])}"`);r+=">"}if(-1===T.indexOf(e)){if(t[N])r+=t[N].__html;else for(;n.length;){let e=n.pop();if(e)if(e.pop)for(let t=e.length;t--;)n.push(e[t]);else r+=!0===O[e]?e:A(e)}r+=e?`</${e}>`:""}return O[r]=!0,r}const M=({children:e})=>D(null,null,...e),q="bespoke-marp-presenter-",_={container:`${q}container`,next:`${q}next`,nextContainer:`${q}next-container`,noteContainer:`${q}note-container`,infoContainer:`${q}info-container`,infoPage:`${q}info-page`,infoPageText:`${q}info-page-text`,infoPagePrev:`${q}info-page-prev`,infoPageNext:`${q}info-page-next`,infoTime:`${q}info-time`,infoTimer:`${q}info-timer`},U=e=>{const{title:t}=document;document.title="[Presenter view]"+(t?` - ${t}`:"");const n={},r=e=>(n[e]=n[e]||document.querySelector(`.${e}`),n[e]);document.body.appendChild((e=>{const t=document.createElement("div");return t.className=_.container,t.appendChild(e),t.insertAdjacentHTML("beforeend",D(M,null,D("div",{class:_.nextContainer},D("iframe",{class:_.next,src:"?view=next"})),D("div",{class:_.noteContainer}),D("div",{class:_.infoContainer},D("div",{class:_.infoPage},D("button",{class:_.infoPagePrev,tabindex:"-1",title:"Previous"},"Previous"),D("span",{class:_.infoPageText}),D("button",{class:_.infoPageNext,tabindex:"-1",title:"Next"},"Next")),D("time",{class:_.infoTime,title:"Current time"}),D("div",{class:_.infoTimer})))),t})(e.parent)),(e=>{r(_.nextContainer).addEventListener("click",(()=>e.next()));const t=r(_.next),n=(o=t,(e,t)=>{var n;return null===(n=o.contentWindow)||void 0===n?void 0:n.postMessage(`navigate:${e},${t}`,"null"===window.origin?"*":window.origin)});var o;t.addEventListener("load",(()=>{r(_.nextContainer).classList.add("active"),n(e.slide(),e.fragmentIndex),e.on("fragment",(({index:e,fragmentIndex:t})=>n(e,t)))}));const a=document.querySelectorAll(".bespoke-marp-note");a.forEach((e=>{e.addEventListener("keydown",(e=>e.stopPropagation())),r(_.noteContainer).appendChild(e)})),e.on("activate",(()=>a.forEach((t=>t.classList.toggle("active",t.dataset.index==e.slide()))))),e.on("activate",(({index:t})=>{r(_.infoPageText).textContent=`${t+1} / ${e.slides.length}`}));const i=r(_.infoPagePrev),s=r(_.infoPageNext);i.addEventListener("click",(t=>{i.blur(),e.prev({fragment:!t.shiftKey})})),s.addEventListener("click",(t=>{s.blur(),e.next({fragment:!t.shiftKey})})),e.on("fragment",(({index:t,fragments:n,fragmentIndex:r})=>{i.disabled=0===t&&0===r,s.disabled=t===e.slides.length-1&&r===n.length-1}));const l=()=>r(_.infoTime).textContent=(new Date).toLocaleTimeString();l(),setInterval(l,250)})(e)},V=e=>{if(!(e=>e.syncKey&&"string"==typeof e.syncKey)(e))throw new Error("The current instance of Bespoke.js is invalid for Marp bespoke presenter plugin.");Object.defineProperties(e,{openPresenterView:{enumerable:!0,value:X},presenterUrl:{enumerable:!0,get:F}}),d&&document.addEventListener("keydown",(t=>{"p"!==t.key||t.altKey||t.ctrlKey||t.metaKey||(t.preventDefault(),e.openPresenterView())}))};function X(){const{max:e,floor:t}=Math,n=e(t(.85*window.innerWidth),640),r=e(t(.85*window.innerHeight),360);return window.open(this.presenterUrl,q+this.syncKey,`width=${n},height=${r},menubar=no,toolbar=no`)}function F(){const e=new URLSearchParams(location.search);return e.set("view","presenter"),e.set("sync",this.syncKey),i(e)}const B=e=>{const t=s();return t===r&&e.appendChild(document.createElement("span")),{"":V,[n]:U,[r]:I}[t]},R=e=>{e.on("activate",(t=>{document.querySelectorAll(".bespoke-progress-parent > .bespoke-progress-bar").forEach((n=>{n.style.flexBasis=100*t.index/(e.slides.length-1)+"%"}))}))},j=e=>{const t=Number.parseInt(e,10);return Number.isNaN(t)?null:t},H=(e={})=>{const t={history:!0,...e};return e=>{let n=!0;const r=e=>{const t=n;try{return n=!0,e()}finally{n=t}},o=(t={fragment:!0})=>{((t,n)=>{const{min:r,max:o}=Math,{fragments:a,slides:i}=e,s=o(0,r(t,i.length-1)),l=o(0,r(n||0,a[s].length-1));s===e.slide()&&l===e.fragmentIndex||e.slide(s,{fragment:l})})((j(location.hash.slice(1))||1)-1,t.fragment?j(l("f")||""):null)};e.on("fragment",(({index:e,fragmentIndex:r})=>{n||c({f:0===r||r.toString()},{location:{...location,hash:`#${e+1}`},setter:(...e)=>t.history?history.pushState(...e):history.replaceState(...e)})})),setTimeout((()=>{o(),window.addEventListener("hashchange",(()=>r((()=>{o({fragment:!1}),c({f:void 0})})))),window.addEventListener("popstate",(()=>{n||r((()=>o()))})),n=!1}),0)}},Y=(e={})=>{var n;const r=e.key||(null===(n=window.history.state)||void 0===n?void 0:n.marpBespokeSyncKey)||Math.random().toString(36).slice(2),o=`bespoke-marp-sync-${r}`;var a;a={marpBespokeSyncKey:r},c({},{setter:(e,...n)=>t({...e,...a},...n)});const i=()=>{const e=f(o);return e?JSON.parse(e):Object.create(null)},s=e=>{const t=i(),n={...t,...e(t)};return u(o,JSON.stringify(n)),n},l=()=>{window.removeEventListener("pageshow",l),s((e=>({reference:(e.reference||0)+1})))};return e=>{l(),Object.defineProperty(e,"syncKey",{value:r,enumerable:!0});let t=!0;setTimeout((()=>{e.on("fragment",(e=>{t&&s((()=>({index:e.index,fragmentIndex:e.fragmentIndex})))}))}),0),window.addEventListener("storage",(n=>{if(n.key===o&&n.oldValue&&n.newValue){const r=JSON.parse(n.oldValue),o=JSON.parse(n.newValue);if(r.index!==o.index||r.fragmentIndex!==o.fragmentIndex)try{t=!1,e.slide(o.index,{fragment:o.fragmentIndex})}finally{t=!0}}}));const n=()=>{const{reference:e}=i();void 0===e||e<=1?m(o):s((()=>({reference:e-1})))};window.addEventListener("pagehide",(e=>{e.persisted&&window.addEventListener("pageshow",l),n()})),e.on("destroy",n)}},{PI:J,abs:W,sqrt:z,atan2:G}=Math,Q={passive:!0},Z=({slope:e=-.7,swipeThreshold:t=30}={})=>n=>{let r;const o=n.parent,a=e=>{const t=o.getBoundingClientRect();return{x:e.pageX-(t.left+t.right)/2,y:e.pageY-(t.top+t.bottom)/2}};o.addEventListener("touchstart",(({touches:e})=>{r=1===e.length?a(e[0]):void 0}),Q),o.addEventListener("touchmove",(e=>{if(r)if(1===e.touches.length){e.preventDefault();const t=a(e.touches[0]),n=t.x-r.x,o=t.y-r.y;r.delta=z(W(n)**2+W(o)**2),r.radian=G(n,o)}else r=void 0})),o.addEventListener("touchend",(o=>{if(r){if(r.delta&&r.delta>=t&&r.radian){const t=(r.radian-e+J)%(2*J)-J;n[t<0?"next":"prev"](),o.stopPropagation()}r=void 0}}),Q)},ee="_tA",te=e=>{const t=document.documentTransition;if(!t)return;let n;e._tP=!1;const r=(n,{back:r,cond:o})=>a=>{const i=e.slides[e.slide()].querySelector("section[data-transition]");if(!i)return!0;const s=document.querySelector(".bespoke-marp-osc"),l=s?[s]:void 0;if(e._tP){if(a._tA){e._tP=!1;try{t.start({sharedElements:l}).catch((()=>{}))}catch(e){}return!0}}else{if(!o(a))return!0;e._tP=t.prepare({rootTransition:a.back||r?i.dataset.transitionBack:i.dataset.transition,sharedElements:l}).then((()=>n(a))).catch((()=>n(a)))}return!1};e.on("prev",r((t=>e.prev({...t,[ee]:!0})),{back:!0,cond:e=>{var t;return e.index>0&&!((null===(t=e.fragment)||void 0===t||t)&&n.fragmentIndex>0)}})),e.on("next",r((t=>e.next({...t,[ee]:!0})),{cond:t=>t.index+1<e.slides.length&&!(n.fragmentIndex+1<n.fragments.length)})),setTimeout((()=>{e.on("slide",r((t=>e.slide(t.index,{...t,[ee]:!0})),{cond:t=>{const n=e.slide();return t.index!==n&&(t.back=t.index<n,!0)}}))}),0),e.on("fragment",(e=>{n=e}))};let ne;const re=()=>(void 0===ne&&(ne="wakeLock"in navigator&&navigator.wakeLock),ne),oe=async()=>{const e=re();if(e)try{return await e.request("screen")}catch(e){console.warn(e)}return null},ae=async()=>{if(!re())return;let e;const t=()=>{e&&"visible"===document.visibilityState&&oe()};for(const e of["visibilitychange","fullscreenchange"])document.addEventListener(e,t);return e=await oe(),e};((t=document.getElementById("p"))=>{(()=>{const t=l("view");e.dataset.bespokeView=t===r||t===n?t:""})();const a=(e=>{const t=l(e);return c({[e]:void 0}),t})("sync")||void 0;var i,d,f,u,m,g,h,y,x,b,E,I;i=t,d=((...e)=>{const t=o.findIndex((e=>s()===e));return e.map((([e,n])=>e[t]&&n)).filter((e=>e))})([[1,1,0],Y({key:a})],[[1,1,1],B(t)],[[1,1,0],L],[[1,1,1],p],[[1,0,0],k()],[[1,1,1],$],[[1,1,1],H({history:!1})],[[1,1,0],P()],[[1,1,0],w],[[1,0,0],R],[[1,1,0],Z()],[[1,0,0],S()],[[1,0,0],te],[[1,1,1],v],[[1,1,0],ae]),u=1===(i.parent||i).nodeType?i.parent||i:document.querySelector(i.parent||i),m=[].filter.call("string"==typeof i.slides?u.querySelectorAll(i.slides):i.slides||u.children,(function(e){return"SCRIPT"!==e.nodeName})),g={},h=function(e,t){return(t=t||{}).index=m.indexOf(e),t.slide=e,t},b=function(e,t){m[e]&&(f&&x("deactivate",h(f,t)),f=m[e],x("activate",h(f,t)))},E=function(e,t){var n=m.indexOf(f)+e;x(e>0?"next":"prev",h(f,t))&&b(n,t)},I={off:y=function(e,t){g[e]=(g[e]||[]).filter((function(e){return e!==t}))},on:function(e,t){return(g[e]||(g[e]=[])).push(t),y.bind(null,e,t)},fire:x=function(e,t){return(g[e]||[]).reduce((function(e,n){return e&&!1!==n(t)}),!0)},slide:function(e,t){if(!arguments.length)return m.indexOf(f);x("slide",h(m[e],t))&&b(e,t)},next:E.bind(null,1),prev:E.bind(null,-1),parent:u,slides:m,destroy:function(e){x("destroy",h(f,e)),g={}}},(d||[]).forEach((function(e){e(I)})),f||b(0)})()}();</script><script>window.__marpCliWatchWS="ws://localhost:37717/a5d553d614ed2fd6e496568f582b716e547d90ee10981b880ff13a9301801ea7";!function(){"use strict";const e=(n,o=!1)=>{const t=new WebSocket(n);return t.addEventListener("open",(()=>{console.info("[Marp CLI] Observing the change of file..."),o&&location.reload()})),t.addEventListener("close",(()=>{console.warn("[Marp CLI] WebSocket for file watcher was disconnected. Try re-connecting in 5000ms..."),setTimeout((()=>e(n,!0)),5e3)})),t.addEventListener("message",(e=>{"reload"===e.data&&location.reload()})),t};(()=>{const n=window.__marpCliWatchWS;n&&e(n)})()}();</script></body></html>

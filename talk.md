@@ -26,13 +26,43 @@ footer: '![width:90 height:40](figures/logo/NGI/NGI_logo_transparent.gif)'
 <!-- ## <span style="color:#F5F5F5">What is a good *enough* code model?</span> -->
 
 
-
 --- 
 
 
+<!-- _class: split-text-image -->
+
+<!-- _footer: "![width:90 height:40](figures/logo/NGI/NGI_logo_transparent.gif) [1] Wilson, Greg, et al. 'Good enough practices in scientific computing.' PLoS computational biology 13.6 (2017): e1005510." -->
+
+# We do good *enough*<sup>[1]</sup> 
+
+<div class=ldiv>
+
+##
+
+A model of a horse
+![w:400 h:350](figures/illustrations/horse.png)
+*Credit:* [Ali Bati](http://www.alibati.com/horse)
+
+
+</div> 
+
+
+<div class=rdiv>
+
+## 
+
+Development speed vs. time 
+![w:450 h:325](figures/illustrations/development_speed_quick_hacks.png) 
+*Credit:* Radovan Bast
+
+
+</div> 
+
+---
+<!-- 
 <!-- paginate: true -->
 
-<!-- _footer: "![width:90 height:40](figures/logo/NGI/NGI_logo_transparent.gif)  *Figure credit: [Ali Bati](http://www.alibati.com/horse)* " -->
+<!-- _footer: "![width:90 height:40](figures/logo/NGI/NGI_logo_transparent.gif)  *Figure credit: [Ali Bati](http://www.alibati.com/horse)* " 
 
 # What is a good *enough* scientific model?
 
@@ -42,15 +72,10 @@ footer: '![width:90 height:40](figures/logo/NGI/NGI_logo_transparent.gif)'
 
  
 ![bg right w:400 h:350](figures/illustrations/horse.png) 
+ --- 
+-->
 
-
-
---- 
-
-<!-- paginate: true -->
-
-<!-- _footer: "![width:90 height:40](figures/logo/NGI/NGI_logo_transparent.gif)  *Figure credit: [Ali Bati](http://www.alibati.com/horse)* " -->
-
+<!-- 
 
 # What is a good *enough* code?
 
@@ -65,7 +90,7 @@ footer: '![width:90 height:40](figures/logo/NGI/NGI_logo_transparent.gif)'
 
 
 
---- 
+---  -->
 
 
 # What is good *enough* code?
@@ -240,7 +265,7 @@ A Python Enhancement Proposal [(PEP)](https://peps.python.org/pep-0000/) is a de
 <span style="color:#F5F5F5">
 - *Code is read more often then it is written* - Guido Van Rossum 
 - Standardization 
-- Automate the checking procedure  
+- Automation 
 </span>
 </div>
 
@@ -265,7 +290,7 @@ A Python Enhancement Proposal [(PEP)](https://peps.python.org/pep-0000/) is a de
 ## Why should **you** care about the PEPs?
 - *Code is read more often then it is written* - Guido Van Rossum 
 - Standardization 
-- Automate the checking procedure  
+- Automation   
 
 </div> 
 
@@ -297,7 +322,7 @@ A Python Enhancement Proposal [(PEP)](https://peps.python.org/pep-0000/) is a de
 
 - Type annotation 
   - Released 2015-09-13  
-- Automatic tool 
+- Tool 
   - [mypy](https://mypy.readthedocs.io/en/stable/)
 
 </div> 
@@ -309,7 +334,7 @@ A Python Enhancement Proposal [(PEP)](https://peps.python.org/pep-0000/) is a de
 
 - Style guide for Python Code 
   - Released 2013-08-01  
-- Automatic tool 
+- Tool 
   - [black](https://black.readthedocs.io/en/stable/)
   - [flake8](https://flake8.pycqa.org/en/latest/)
   - [isort](https://pycqa.github.io/isort/)
@@ -493,6 +518,8 @@ factorial.py:2:1: F401 'pathlib.Path' imported but unused
 factorial.py:4:1: E741 ambiguous variable name 'l'
 ```
 
+
+
 ---
 
 
@@ -535,6 +562,7 @@ print(f"value is: {factorial(4)}")
 
 
 - Enforce standards 
+  - `.pre-commit-config.yaml`
 
 ## 
 
@@ -627,7 +655,7 @@ factorial.py:4:1: E741 ambiguous variable name 'l'
 
 # Pre-commit 
 
-My code file is updated 
+My code is updated 
 ```python
 # this file is called factorial.py
 l = 42
@@ -648,13 +676,13 @@ print(f"value is: {factorial(4)}")
 
 # Pre-commit with automatic formatting  
 
-[Demo repository](https://github.com/sunnivin/demo-make-model-validation-sexy-again) 
+[Demo repository](https://github.com/sunnivin/good-scientific-software-for-free-python-demo) 
 
 --- 
 
-
+<!-- 
 <!-- _class: split-text-image -->
-
+<!-- 
 # The *zen* of scientific programming 
 
 <div class=ldiv>
@@ -682,34 +710,16 @@ print(f"value is: {factorial(4)}")
 *Credit: Radovan Bast*
 
 
-</div>
+</div> -->
+
+ 
+# :pray: Credit for this talk :pray: 
+
+- [Modular code development](http://cicero.xyz/v3/remark/0.14.0/github.com/coderefinery/modular-code-development/master/talk.md) by Radovan Bast
+- [Factorial](https://en.wikipedia.org/wiki/Factorial)
+- [Life is better painted black, or: How to Stop Worrying and Embrace Auto-Formatting](https://www.youtube.com/watch?v=esZLCuWs_2Y), Lukasz Langa, PyCon2019
 
 
---- 
-
-
-
-# The *zen* of scientific programming 
-
-<div align="center"> 
-
-![w:450 h:325](figures/illustrations/development_speed_quick_hacks.png) 
-*Credit: Radovan Bast*
-
-
-## 
-
-
-- Find the right tool for the right job
-
-
-
---- 
-
-
---- 
-
-Give credit, tricks that are useful for me does not need to be so for others
 
 
 
