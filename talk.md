@@ -27,6 +27,8 @@ footer: '![width:90 height:40](figures/logo/NGI/NGI_logo_transparent.gif)'
 
 --- 
 
+<!-- paginate: true -->
+
 <!-- _class: split-text-image -->
 
 <!-- _footer: "![width:90 height:40](figures/logo/NGI/NGI_logo_transparent.gif) [1] Wilson, Greg, et al. 'Good enough practices in scientific computing.' PLoS computational biology 13.6 (2017): e1005510." -->
@@ -235,7 +237,7 @@ Development speed vs. time
 
 --- 
 
-> Know the rules so you know how to break them efficiently - Dalai Lama
+> Know the rules well, so you can break them effectively - Dalai Lama XIV
 
 --- 
 
@@ -366,7 +368,7 @@ A Python Enhancement Proposal [(PEP)](https://peps.python.org/pep-0000/) is a de
 
 
 
-# Our best PEP friends 
+# Our PEP best friends 
 
 
 
@@ -416,7 +418,11 @@ A Python Enhancement Proposal [(PEP)](https://peps.python.org/pep-0000/) is a de
 
 --- 
 
-# Type hints 
+# Example  
+
+ 
+$$ n! = n \cdot (n-1)\cdot (n-2)\cdot ... \cdot 2 \cdot 1 = n \cdot (n-1)! $$
+
 
 ```python
 # this file is named factorial.py
@@ -428,7 +434,6 @@ def factorial(n):
 print(f"value is: {factorial(4)}")
 print(f"value is: {factorial('4')}")
 ```
-
 
 ```python
 (pre-commits-python-example-py3.11):~/good-scientific-software-for-free-python-demo(main)$ python factorial.py
@@ -489,7 +494,7 @@ Found 1 error in 1 file (checked 1 source file)
 ```
 
 
-:scream: what about data and type hints<sup>[1]</sup>? :scream:
+:exclamation: What about data<sup>[1]</sup>? 
 
 
 --- 
@@ -523,7 +528,8 @@ foo = long_function_name(var_one, var_two,
 
 ```python 
 l : string = "my_string"
-1 : float = 4.5
+1
+L : float = 4.5
 ```
 
 
@@ -538,14 +544,14 @@ The following code can run correctly, but is not correctly formatted according t
 from pathlib import Path
 import math 
 
-l = 42 
+l = 4 
 def factorial(
     n: int) -> int        :
     if n <          2:
         return 1
     return           n * factorial(n - 1)
 
-print(f"value is: {factorial(4)}")
+print(f"value is: {factorial(l)}")
 ```
 
 
@@ -564,14 +570,14 @@ print(f"value is: {factorial(4)}")
 import math
 from pathlib import Path
 
-l = 42 
+l = 4 
 def factorial(
     n: int) -> int        :
     if n <          2:
         return 1
     return           n * factorial(n - 1)
 
-print(f"value is: {factorial(4)}")
+print(f"value is: {factorial(l)}")
 ```
 
 ---
@@ -587,14 +593,14 @@ factorial.py:4:1: E741 ambiguous variable name 'l'
 
 ```python 
 # this file is named factorial.py
-my_variable = 42 
+my_variable = 4 
 def factorial(
     n: int) -> int        :
     if n <          2:
         return 1
     return           n * factorial(n - 1)
 
-print(f"value is: {factorial(4)}")
+print(f"value is: {factorial(my_variable)}")
 ```
 
 
@@ -617,7 +623,7 @@ All done! ✨ 🍰 ✨
 
 ```python 
 # this file is named factorial.py
-my_variable = 42
+my_variable = 4
 
 
 def factorial(n: int) -> int:
@@ -626,7 +632,7 @@ def factorial(n: int) -> int:
     return n * factorial(n - 1)
 
 
-print(f"value is: {factorial(4)}")
+print(f"value is: {factorial(my_variable)}")
 ```
  
 --- 
@@ -644,19 +650,18 @@ print(f"value is: {factorial(4)}")
 ##
 
 
-- Enforce standards 
-  - `.pre-commit-config.yaml`
-
+- Enforce standards locally
+  
 ## 
 
 - Action linked to a change
-  - Pre-commit 
- 
+
 
 ## 
 
-- Local run 
-
+- Pre-commit 
+  - `.pre-commit-config.yaml`
+ 
 
 
 </div> 
@@ -707,7 +712,7 @@ pre-commit installed at .git/hooks/pre-commit
 # Pre-commit 
 
 ```powershell 
-(pre-commits-python-example-py3.11):~/good-scientific-software-for-free-python-demo(main)$ git add . 
+(pre-commits-python-example-py3.11):~/good-scientific-software-for-free-python-demo(main)$ git add factorial.py 
 (pre-commits-python-example-py3.11):~/good-scientific-software-for-free-python-demo(main)$ git commit -m "doc: enforcing PEP8" 
 ...
 Fixing factorial.py
@@ -741,7 +746,7 @@ factorial.py:4:1: E741 ambiguous variable name 'l'
 My code is updated 
 ```python
 # this file is called factorial.py
-l = 42
+l = 4
 
 
 def factorial(n: int) -> int:
@@ -750,7 +755,7 @@ def factorial(n: int) -> int:
     return n * factorial(n - 1)
 
 
-print(f"value is: {factorial(4)}")
+print(f"value is: {factorial(l)}")
 ```
 
 
@@ -799,7 +804,7 @@ print(f"value is: {factorial(4)}")
 # :pray: Credit for this talk :pray: 
 
 - [Modular code development](http://cicero.xyz/v3/remark/0.14.0/github.com/coderefinery/modular-code-development/master/talk.md) by Radovan Bast
-- [Factorial](https://en.wikipedia.org/wiki/Factorial)
+- [Factorial](https://en.wikipedia.org/wiki/Factorial) by Wikipedia
 - [Life is better painted black, or: How to Stop Worrying and Embrace Auto-Formatting](https://www.youtube.com/watch?v=esZLCuWs_2Y), Lukasz Langa, PyCon2019
 
 
