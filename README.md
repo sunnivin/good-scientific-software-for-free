@@ -1,10 +1,7 @@
 # Slides with marp 
-This repository contains a talk about which tricks you can get for "free" to make good enough scientific software and why you should care about it. 
+The code quality is essential for reproducibility and maintainability. In this talk I will show some tricks you can use to automatically increase the quality of your Python code at "zero" cost. 
 
-
-## Abstract 
-
-As a scientific developer you are expected to deliver good enough science and code to 
+Keywords: pre-commits, python, good enough practices
 
 
 

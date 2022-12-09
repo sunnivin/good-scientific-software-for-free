@@ -25,15 +25,43 @@ footer: '![width:90 height:40](figures/logo/NGI/NGI_logo_transparent.gif)'
 <!-- Write some invisible text -->
 <!-- ## <span style="color:#F5F5F5">What is a good *enough* code model?</span> -->
 
-
 --- 
+
+<!-- _class: split-text-image -->
+
+<!-- _footer: "![width:90 height:40](figures/logo/NGI/NGI_logo_transparent.gif) [1] Wilson, Greg, et al. 'Good enough practices in scientific computing.' PLoS computational biology 13.6 (2017): e1005510." -->
+
+# Do good *enough*<sup>[1]</sup> 
+
+<div class=ldiv>
+
+##
+
+<!-- A model of a horse
+![w:400 h:350](figures/illustrations/horse.png)
+*Credit:* [Ali Bati](http://www.alibati.com/horse) -->
+
+</div> 
+
+<div class=rdiv>
+
+## 
+
+<!-- Development speed vs. time 
+![w:450 h:325](figures/illustrations/development_speed_quick_hacks.png) 
+*Credit:* Radovan Bast -->
+
+
+</div> 
+
+---
 
 
 <!-- _class: split-text-image -->
 
 <!-- _footer: "![width:90 height:40](figures/logo/NGI/NGI_logo_transparent.gif) [1] Wilson, Greg, et al. 'Good enough practices in scientific computing.' PLoS computational biology 13.6 (2017): e1005510." -->
 
-# We do good *enough*<sup>[1]</sup> 
+# Do good *enough*<sup>[1]</sup> 
 
 <div class=ldiv>
 
@@ -43,9 +71,37 @@ A model of a horse
 ![w:400 h:350](figures/illustrations/horse.png)
 *Credit:* [Ali Bati](http://www.alibati.com/horse)
 
+</div> 
+
+<div class=rdiv>
+
+## 
+
+<!-- Development speed vs. time  -->
+<!-- ![w:450 h:325](figures/illustrations/development_speed_quick_hacks.png) 
+*Credit:* Radovan Bast -->
+
 
 </div> 
 
+
+--- 
+
+<!-- _class: split-text-image -->
+
+<!-- _footer: "![width:90 height:40](figures/logo/NGI/NGI_logo_transparent.gif) [1] Wilson, Greg, et al. 'Good enough practices in scientific computing.' PLoS computational biology 13.6 (2017): e1005510." -->
+
+# Do good *enough*<sup>[1]</sup> 
+
+<div class=ldiv>
+
+##
+
+A model of a horse
+![w:400 h:350](figures/illustrations/horse.png)
+*Credit:* [Ali Bati](http://www.alibati.com/horse)
+
+</div> 
 
 <div class=rdiv>
 
@@ -57,6 +113,7 @@ Development speed vs. time
 
 
 </div> 
+
 
 ---
 <!-- 
@@ -178,7 +235,7 @@ Development speed vs. time
 
 --- 
 
-> Know the rules so you know how to break them efficiently - Daila Lama
+> Know the rules so you know how to break them efficiently - Dalai Lama
 
 --- 
 
@@ -250,12 +307,11 @@ Namespaces are one honking great idea -- let's do more of those!
 
 
 --- 
-
-
+<!-- 
 
 <!-- _class: split-text-image -->
 
-# The PEPs
+<!-- # The PEPs
 
 <div class=ldiv>
 
@@ -269,19 +325,19 @@ A Python Enhancement Proposal [(PEP)](https://peps.python.org/pep-0000/) is a de
 </span>
 </div>
 
-<div class=rdiv>
+<div class=rdiv> -->
 
 <!-- ![w:400 h:425](figures/illustrations/dependency.png) 
 *Image credit: [xkcd](https://xkcd.com/2347/)* -->
 
-
+<!-- 
 </div>
 
----
+--- -->
 
 <!-- _class: split-text-image -->
 
-# The PEPs
+<!-- # The PEPs
 
 <div class=ldiv>
 
@@ -298,13 +354,13 @@ A Python Enhancement Proposal [(PEP)](https://peps.python.org/pep-0000/) is a de
 <div class=rdiv>
 
 ![w:400 h:425](figures/illustrations/dependency.png) 
-*Image credit: [xkcd](https://xkcd.com/2347/)*
+*Image credit: [xkcd](https://xkcd.com/2347/)* 
 
-
-</div>
+</div> 
 
 ---
 
+-->
 
 <!-- _class: split-text -->
 
@@ -317,7 +373,13 @@ A Python Enhancement Proposal [(PEP)](https://peps.python.org/pep-0000/) is a de
 <div class=ldiv>
 
 
-## [PEP 484](https://peps.python.org/pep-0484/)
+# 
+
+#
+
+#
+
+#### [PEP 484](https://peps.python.org/pep-0484/)
 
 
 - Type annotation 
@@ -330,7 +392,13 @@ A Python Enhancement Proposal [(PEP)](https://peps.python.org/pep-0000/) is a de
 
 <div class=rdiv>
 
-## [PEP 8](https://peps.python.org/pep-0008/)
+#
+
+## 
+
+## 
+
+#### [PEP 8](https://peps.python.org/pep-0008/)
 
 - Style guide for Python Code 
   - Released 2013-08-01  
@@ -342,8 +410,9 @@ A Python Enhancement Proposal [(PEP)](https://peps.python.org/pep-0000/) is a de
 </div>
 
 
+<div align="center"> 
 
-
+*A Python Enhancement Proposal [(PEP)](https://peps.python.org/pep-0000/) is a design document providing information to the Python community, or describing a new feature for Python or its processes or environment*
 
 --- 
 
@@ -384,14 +453,12 @@ Update function to include type hints
 def factorial(n: int ) -> int:
     if n < 2:
         return 1
-    return n * factorial_int(n - 1)
+    return n * factorial(n - 1)
 
 
 print(f"value is: {factorial(4)}")
 print(f"value is: {factorial(4.5)}")
 ```
-
-Output 
 
 ```powershell
 (pre-commits-python-example-py3.11):~/good-scientific-software-for-free-python-demo(main)$ python factorial.py
@@ -518,6 +585,18 @@ factorial.py:2:1: F401 'pathlib.Path' imported but unused
 factorial.py:4:1: E741 ambiguous variable name 'l'
 ```
 
+```python 
+# this file is named factorial.py
+my_variable = 42 
+def factorial(
+    n: int) -> int        :
+    if n <          2:
+        return 1
+    return           n * factorial(n - 1)
+
+print(f"value is: {factorial(4)}")
+```
+
 
 
 ---
@@ -537,6 +616,10 @@ All done! ✨ 🍰 ✨
 ```
 
 ```python 
+# this file is named factorial.py
+my_variable = 42
+
+
 def factorial(n: int) -> int:
     if n < 2:
         return 1
